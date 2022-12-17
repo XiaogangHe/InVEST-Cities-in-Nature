@@ -24,14 +24,14 @@ const HomepageHeader = () => {
             )}
             to="/docs/"
           >
-            Know our Projects
+            Know your Projects
           </Link>
           <Link
             className={clsx(
               'button button--outline button--secondary button--lg',
               styles.getStarted
             )}
-            to="https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ/playlists"
+            to="https://www.youtube.com/watch?v=kGau-gNEzFM&t=1s"
           >
             Watch the tutorials
           </Link>
@@ -40,9 +40,9 @@ const HomepageHeader = () => {
               'button button--outline button--primary button--lg',
               styles.getStarted
             )}
-            to="/demodays/"
+            to="/community/support/"
           >
-            Demo Days
+            FAQs
           </Link>
         </div>
       </div>
@@ -73,7 +73,7 @@ const Home = () => {
             <br></br>
             <br></br>
             <br></br>
-            <h1 align="center">Know the Community</h1>
+            <h1 align="center">Ecosystem Services</h1>
             <br></br>
             <br></br>
             {features && features.length > 0 && (
