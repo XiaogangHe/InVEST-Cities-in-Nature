@@ -8,31 +8,35 @@ const FeatureList = [
     Svg: require('../../../static/img/code.svg').default,
     description: (
       <>
-        moja global actively performs in open source events and one of them is Google Season of
-        Documentation. We welcome contributors who have a love for documentation like us and can
-        help it improve it to make it easier for new contributors.
+        InVEST is an open source xxx.
+        InVEST is an open source xxx.
+        InVEST is an open source xxx.
+        InVEST is an open source xxx.
+        InVEST is an open source xxx.
       </>
     ),
   },
   {
-    title: 'Know Our Projects',
+    title: 'Studio Projects',
     Svg: require('../../../static/img/learn-more.svg').default,
     description: (
       <>
-        moja global has many projects apart from FLINT. Be a part of one of those projects by
-        writing code, improving documentation or just suggest us features that you think will be
-        helpful to the users.
+        You will use InVEST to xxx.
+        You will use InVEST to xxx.
+        You will use InVEST to xxx.
+        You will use InVEST to xxx.
       </>
     ),
   },
   {
-    title: 'Write Blogs for Us',
+    title: 'Getting Started',
     Svg: require('../../../static/img/write.svg').default,
     description: (
       <>
-        moja global is a Linux Foundation organisation and therefore participates in the LFX
-        mentorship program as well. We welcome new contributors who can help program FLINT and make
-        it better for the world!
+        You will use InVEST to xxx.
+        You will use InVEST to xxx.
+        You will use InVEST to xxx.
+        You will use InVEST to xxx.
       </>
     ),
   },
