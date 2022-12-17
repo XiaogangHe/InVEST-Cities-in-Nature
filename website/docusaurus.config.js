@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'InVEST tutorials/showcases for NUS Cities in Nature module', // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-CN'],
+    locales: ['en'],
   },
   themeConfig: {
     algolia: {
