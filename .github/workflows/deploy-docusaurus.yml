@@ -39,9 +39,9 @@ jobs:
         run: |
           cd website
           npm install 
-          yarn docusaurus build --no-minify
+          npm yarn run
       - name: Build
-        run: yarn build
+        run: yarn build --no-minify
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
