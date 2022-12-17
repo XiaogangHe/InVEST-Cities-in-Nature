@@ -94,7 +94,6 @@ const Home = () => {
         </main>
 
         <Contributors />
-        <Sponsors />
       </Layout>
     </>
   );
