@@ -1,14 +1,14 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: `Moja Global Community`,
-  tagline: `Learn about moja global's projects and join our ever-growing community`,
-  url: 'https://community.moja.global',
-  baseUrl: '/',
+  title: `Cities in Nature`,
+  tagline: `Learn how to use InVEST model to quantify ecosystem services`,
+  url: 'https://xiaoganghe.github.io',
+  baseUrl: '/InVEST-Cities-in-Nature/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'moja global', // Usually your GitHub org/user name.
-  projectName: 'Community Website', // Usually your repo name.
+  organizationName: 'XiaogangHE', // Usually your GitHub org/user name.
+  projectName: 'InVEST tutorials/showcases for NUS Cities in Nature module', // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'es'],
@@ -28,7 +28,7 @@ module.exports = {
       backgroundColor: '#74e8a3',
       isCloseable: true,
       content:
-        'If you would like to contribute, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/moja-global/community-website">GitHub</a> ⭐ and take a look at the open issues!',
+        'Check the module website <a target="_blank" rel="noopener noreferrer" href="https://xiaoganghe.github.io/NUS-CDE2503/">NUS CDE2503: 🌇 Cities in Nature 🌴</a> for latest announcements!',
     },
     colorMode: {
       defaultMode: 'dark',
@@ -44,7 +44,7 @@ module.exports = {
       },
     },
     navbar: {
-      title: 'Community',
+      title: 'InVEST',
       hideOnScroll: true,
       logo: {
         alt: 'moja global Logo',
@@ -57,7 +57,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/moja-global',
+          href: 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature',
           label: 'GitHub',
           position: 'right',
         },
@@ -71,7 +71,7 @@ module.exports = {
         { to: '/blog', label: 'Blogs', position: 'left' },
         {
           to: '/community/support',
-          label: 'Community',
+          label: 'Tutorial',
           position: 'left',
           activeBaseRegex: '/community/',
         },
@@ -87,10 +87,6 @@ module.exports = {
             {
               label: 'Case Studies',
               href: '/case-studies/introduction',
-            },
-            {
-              label: 'Tutorial',
-              href: '/tutorial/tutorial-introduction',
             },
           ],
         },
