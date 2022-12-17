@@ -162,7 +162,7 @@ module.exports = {
               href: '/community/contributing',
             },
             {
-              label: 'Workiing Groups',
+              label: 'Working Groups',
               href: '/community/working-groups/doc-wg',
             },
           ],
