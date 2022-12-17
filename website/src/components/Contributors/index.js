@@ -56,20 +56,6 @@ const Contributors = (props) => {
         )}
       </div>
       {/* counter */}
-      <div className="stats">
-        <div className="stats-item">
-          <p>{sortedContributors.length} Contributors</p>
-        </div>
-        <div className="stats-item">
-          <p>{repoForks} Forks</p>
-        </div>
-        <div className="stats-item">
-          <p>{repoWatchers} Watchers</p>
-        </div>
-        <div className="stats-item">
-          <p>{repoStars} Stars</p>
-        </div>
-      </div>
     </div>
   );
 };
