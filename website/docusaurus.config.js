@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'InVEST tutorials/showcases for NUS Cities in Nature module', // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'es'],
+    locales: ['en', 'zh-CN'],
   },
   themeConfig: {
     algolia: {
@@ -150,20 +150,12 @@ module.exports = {
           title: 'Getting Started',
           items: [
             {
-              label: 'About moja global',
+              label: 'About InVEST',
               href: '/docs/about-moja-global',
             },
             {
-              label: 'Governance model',
+              label: 'Model Overview',
               href: '/community/governance',
-            },
-            {
-              label: 'Contributing guidelines',
-              href: '/community/contributing',
-            },
-            {
-              label: 'Working Groups',
-              href: '/community/working-groups/doc-wg',
             },
           ],
         },
@@ -172,15 +164,15 @@ module.exports = {
           items: [
             {
               html: `
-              <a href= 'https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ' target="_blank">
-              <img class="socials" src="/img/youtube.png" alt="youtube icon" />
+              <a href= 'https://www.youtube.com/watch?v=kGau-gNEzFM&t=1s' target="_blank">
+              <img class="socials" src="/static/img/youtube.png" alt="youtube icon" />
               </a>
               `,
             },
             {
               html: `
-              <a href= 'https://github.com/moja-global' target="_blank">
-              <img class="socials" src="/img/github.png" alt="github icon" />
+              <a href= 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature' target="_blank">
+              <img class="socials" src="/static/img/github.png" alt="github icon" />
               </a>
               `,
             },
