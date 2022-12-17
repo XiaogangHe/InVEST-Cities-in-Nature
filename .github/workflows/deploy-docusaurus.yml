@@ -40,7 +40,9 @@ jobs:
           cd website
           yarn
       - name: Build
-        run: yarn build 
+        run: |
+          cd website
+          yarn build 
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
