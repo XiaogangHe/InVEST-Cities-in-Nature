@@ -3,7 +3,7 @@ title: Moja global is participating in Google Summer of Code 2022
 description: Moja global announces the projects participating in Google Summer of Code 2022 as a mentoring organization
 tags: ['moja-global','outreachy','open-source','internships','mentorship']
 image: https://i.imgur.com/TlptJ8K.png
-authors: harshcasper
+authors: XiaogangHe
 hide_table_of_contents: false
 slug: moja-global-google-summer-of-code-2022
 ---

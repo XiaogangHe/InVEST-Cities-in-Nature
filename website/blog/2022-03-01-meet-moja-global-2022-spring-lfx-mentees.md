@@ -3,7 +3,7 @@ title: Meet moja global 2022 Spring LFX mentees
 description: Moja global announces the selection of mentees for the Spring 2022 LFX Mentorship program
 tags: ['moja-global','lfx','open-source','internships','mentorship']
 image: https://i.imgur.com/eX7tWNQ.png
-authors: harshcasper
+authors: XiaogangHe
 slug: meet-moja-global-2022-spring-lfx-mentees
 hide_table_of_contents: false
 ---

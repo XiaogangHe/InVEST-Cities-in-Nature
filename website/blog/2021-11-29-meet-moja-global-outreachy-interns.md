@@ -2,7 +2,7 @@
 title: Meet moja global 2021 Outreachy interns
 description: Moja global announces the selection of interns for the 2021 Outreachy program.
 slug: meet-moja-global-outreachy-2021-interns
-authors: harshcasper
+authors: XiaogangHe
 tags: [moja-global, outreachy, open-source, internships, mentorship]
 image: https://i.imgur.com/UN4SbBx.png
 hide_table_of_contents: false

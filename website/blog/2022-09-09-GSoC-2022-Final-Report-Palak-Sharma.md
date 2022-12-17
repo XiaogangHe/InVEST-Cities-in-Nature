@@ -2,7 +2,7 @@
 title: Google Summer of Code 2022 - Building UI Library for Moja Global
 description: Blog by Palak Sharma describing all the work she did in her GSoC 2022 period with Moja Global.
 tags: ['moja-global','GSoC','Google-Summer-of-Code','open-source','GSoC-2022']
-authors: Palaksharma23
+authors: huiminjoyce
 slug: GSoC-2022-Palak-Sharma
 hide_table_of_contents: false
 ---

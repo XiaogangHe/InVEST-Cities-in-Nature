@@ -3,7 +3,7 @@ title: Meet moja global Google Season of Docs 2022 interns
 description: Moja global announces the selection of interns for the Google Season of Docs 2022.
 tags: ['moja-global','gsod','open-source','internships','mentorship']
 image: https://i.imgur.com/dOKZ0Iw.png
-authors: harshcasper
+authors: XiaogangHe
 hide_table_of_contents: false
 slug: meet-moja-global-google-season-of-docs-2022-interns
 ---

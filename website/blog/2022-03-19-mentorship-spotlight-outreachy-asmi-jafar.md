@@ -3,7 +3,7 @@ title: Mentorship Spotlight - Asmi's experience as an Outreachy Intern
 image: https://i.imgur.com/1oZ4fWI.png
 description: Blog by Asmi Jafar detailing her experience as an Outreachy Intern with moja global and her accomplishments
 tags: ['moja-global','outreachy','open-source','internships','mentorship']
-authors: asmijafar20
+authors: XiaogangHe
 slug: asmi-jafar-outreachy-2021-intern
 hide_table_of_contents: false
 ---

@@ -3,7 +3,7 @@ title: Mentorship Spotlight - Google Season of Docs 2021 with moja global
 description: Mentorship Spotlight blog on the success of moja global's participation in the Google Season of Docs 2021
 tags: ['moja-global','google-season-of-docs','open-source','internships','mentorship','documentation']
 image: https://i.imgur.com/PIgWgEE.png
-authors: aornugent
+authors: huiminjoyce
 hide_table_of_contents: false
 slug: google-season-of-docs-2021
 ---

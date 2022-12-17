@@ -3,7 +3,7 @@ title: Meet moja global May 2022 Outreachy interns
 description: Moja global announces the selection of interns for the May 2022 Outreachy internships
 tags: ['moja-global','outreachy','open-source','internships','mentorship']
 image: https://i.imgur.com/3ufHnnt.png
-authors: harshcasper
+authors: XiaogangHe
 slug: meet-moja-global-outreachy-may-2022-interns
 hide_table_of_contents: false
 ---

@@ -2,7 +2,7 @@
 title: How AFOLU sector is responsible for GHG emission and removal?
 description: Agriculture, Forest and Other Land uses are also responsible for Greenhouse Gases emission and removal.
 slug: afolu-sector-ghg-emission
-authors: sukriti_05
+authors: XiaogangHe
 tags: [moja-global, ghg, open-source, afolu sector]
 image: https://i.imgur.com/NdoUkr0.jpeg
 hide_table_of_contents: false

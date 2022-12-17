@@ -1,27 +1,24 @@
 ---
 authors:
-  name: Radis Toumpalidis
-  title: GSoC'22 Mentee
-  url: https://github.com/radistoubalidis
-  image_url: https://avatars.githubusercontent.com/radistoubalidis
+  name: Xiaogang He
+  title: Assistant Professor
+  url: https://github.com/XiaogangHe
+  image_url: https://avatars.githubusercontent.com/XiaogangHe
 tags: [gsoc, opensource, mlops, devops]
 ---
-# Google Summer of Code 2022 - MLOps for Reproducible Science
+
+# Why InVEST?
 ## Some technical backgouround
-  Full Lands Integration Tool (FLINT) is an open-source software technology designed for measurement-reporting-verifying greenhouse gas emissions and removals from forestry, agriculture and other land uses. FLINT is not an MRV system but provides a framework to progressively build MRV systems for specific cases.
   
-  The Generic Carbon Budget Model (GCBM) is a tool developed to assess and report the cumulative effects of anthropogenic and natural disturbances on forests. The GCBM is a set of modules developed by the  Canadian Forest Service (CFS) to run on top of FLINT. This set of modules describes several forest carbon pools. GCBM simulations work at an annual time step interval. GCBM handles as inputs a combination of spatially explicit datasets concerning the forest (with information like tree species or the location of forest types), age, climate, and disturbances, along with non-spatial parameters such as `volume to biomass conversion coefficients or yield curves`. A python tool is used to prepare the spatial inputs from raster to vector format and an SQLite Database handles the non-spatial data  [[1]](#1).
+The Generic Carbon Budget Model (GCBM) is a tool developed to assess and report the cumulative effects of anthropogenic and natural disturbances on forests. The GCBM is a set of modules developed by the  Canadian Forest Service (CFS) to run on top of FLINT. This set of modules describes several forest carbon pools. GCBM simulations work at an annual time step interval. GCBM handles as inputs a combination of spatially explicit datasets concerning the forest (with information like tree species or the location of forest types), age, climate, and disturbances, along with non-spatial parameters such as `volume to biomass conversion coefficients or yield curves`. A python tool is used to prepare the spatial inputs from raster to vector format and an SQLite Database handles the non-spatial data  [[1]](#1).
   
-  <sub>*carbon pool: represents a reservoir of carbon that can be stored or released , **disturbances: unplanned events (e.g. wildfire) that affect carbon pools</sub>
+<sub>*carbon pool: represents a reservoir of carbon that can be stored or released , **disturbances: unplanned events (e.g. wildfire) that affect carbon pools</sub>
 
 ## Project Description 📌
-  We applied MLOps techniques and tools to a complex scientific workflow s part of a community led, distributed carbon modelling platform. These techniques ensure reproducibility, which is the cornerstone of good science.
-
-  In my proposal, the main concept  is to automate complicated and technically demanding tasks, as well as the corresponding reports,  that a moja-global contributor might face by using CI/CD tools for Machine Learning/Data Science projects. I propose a DVC repository (i.e.remote storage) to cache significant logs and outputs of simulations which is achieved with the [DVC pipeline](#dvc-pipelines-on-the-gcbm-module) for GCBM.Belize and Colombia repositories. Furthermore, I build a cloud storage repository on which we can use DVC's and CML's features to track, cache, compare, store and make flint-ready datasets there, thus making the datasets reproducible and interactive with the git repository that processes them because spatial datasets have a lot of variability and a standardisation process is needed to achieve reproducibility. I believe I achieved that with the work I've done on the [Land Sector](#processing-the-land-sector-datasets) repository. Last but not least, I created a [CML Action](#cml-action-on-flintcloud) that generates a small summary/report from the execution of a simulation for the FLINTcloud platform as a numerical integration test, preventing breaking changes while under active development, and providing a useful template for new users to deploy their own FLINT services.
+In my proposal, the main concept  is to automate complicated and technically demanding tasks, as well as the corresponding reports,  that a moja-global contributor might face by using CI/CD tools for Machine Learning/Data Science projects. I propose a DVC repository (i.e.remote storage) to cache significant logs and outputs of simulations which is achieved with the [DVC pipeline](#dvc-pipelines-on-the-gcbm-module) for GCBM.Belize and Colombia repositories. Furthermore, I build a cloud storage repository on which we can use DVC's and CML's features to track, cache, compare, store and make flint-ready datasets there, thus making the datasets reproducible and interactive with the git repository that processes them because spatial datasets have a lot of variability and a standardisation process is needed to achieve reproducibility. I believe I achieved that with the work I've done on the [Land Sector](#processing-the-land-sector-datasets) repository. Last but not least, I created a [CML Action](#cml-action-on-flintcloud) that generates a small summary/report from the execution of a simulation for the FLINTcloud platform as a numerical integration test, preventing breaking changes while under active development, and providing a useful template for new users to deploy their own FLINT services.
 
 
   <sub>** flint-ready: convert spatial datasets in into to a common format and coordinate system</sub>
-
 
 ### Tech Stacks Used
 | Purpose                                    | Tools and Technologies used |
@@ -30,36 +27,25 @@ tags: [gsoc, opensource, mlops, devops]
 | DVC pipeline in GCBM.Belize                                        | DVC, Python, R                       |                      |
 | Land Sector Dataset Processor                                   | DVC, CML, geopandas, gdal, GitHubActions                   |
 
-### Mentors
-  I owe huge thanks to my mentors [Andrew O'Reilly-Nugent](https://github.com/aornugent) and [Simple Shell](https://github.com/Simpleshell3) for supporting me throughout the whole program and providing the appropriate feedback to me so I can improve my contributions.
-
-### Fellow contributors
-  Also huge thanks to community members [Namya](https://github.com/Namyalg), [Padmaja](https://github.com/padmajabhol), [Harsh](https://github.com/HarshCasper), and all the other contributors that I worked with for not only providing support on technical issues but welcoming me to the community.
-### What do I believe I achieved in a general aspect?
-  In my proposal, my ideas and deliverable items were described generically and indefinitely because I hadn't realized 100% how several aspects of the code base worked. After I conducted enough research and learned how the code works I believed I reformed my deliverables more realistically.
-
-    
 ## DVC pipelines on the GCBM module
 GCBM.Belize PR link: https://github.com/moja-global/GCBM.Belize/pull/14
 ### GCBM.Belize repository
-  GCBM.Belize was developed as a case study for the GCBM in Belize. The repository can be seen as a paradigm on how the GCBM works in nation-scale, but also provides a technical paradigm for new-coming contributors on how the GCBM works, particularly:
+GCBM.Belize was developed as a case study for the GCBM in Belize. The repository can be seen as a paradigm on how the GCBM works in nation-scale, but also provides a technical paradigm for new-coming contributors on how the GCBM works, particularly:
   - How the datasets are prepared
   - How the simulation runs
   - How to interact with the results (analysis and reports)
   
 Some existing issues:
-  - The whole workflow was configured to run in Windows Batch scripts and the steps were not connected between them, nor do they follow any structure, making their execution and the analysis of the results more complicated.
-  - The Belize repository is a good case for experimenting with the GCBM by modifying specific parameters of the simulation and comparing the different outputs they provide. There was no such procedure to do that.
-### A little about DVC
-- [Data Version Control](https://dvc.org/) (DVC) is a dataset versioning tool that takes advantage of already existing engineering tools like Git. So we can't say that DVC is git for handling large-sized datasets that can be managed by git due to size limits.
-### What was the goal?
-Integrate a system-agnostic pipeline to execute the complete workflow (preprocessing, simulation and postprocessing) that tracks and stores the outputs in remote storage.
+- The whole workflow was configured to run in Windows Batch scripts and the steps were not connected between them, nor do they follow any structure, making their execution and the analysis of the results more complicated.
+- The Belize repository is a good case for experimenting with the GCBM by modifying specific parameters of the simulation and comparing the different outputs they provide. There was no such procedure to do that.
+
 ### What does the pipeline offer to the user?
-  - The cases of GCBM.Belize and GCBM.Colombia are developed to only be executed in Windows systems but using DVC's functionalities I set up the pipeline to be system-agnostic.
-  - Before the DVC pipeline was established, the phases of the workflow had to be executed manually but using DVC anyone can execute the whole workflow with only one command (`dvc repro`)
-  - In the cases of the GCBM module, the outputs it generates are for the most part `.tif` files and in the postprocessing step, it generates some metrics and plots. All these outputs are listed and tracked by DVC using md5 hashes. I used DVC's functionality to store files in remote storage and set up a Google Drive repository that stores them.
-  - Furthermore, I used DVC's features for metrics and plot files to track these kinds of outputs from the workflow. This way when someone created another version of the GCBM, the `dvc diff` command could be used to compare the metrics from the standard GCBM version to the new one (and use the output in a potential report as well).
-  - In the scenario that someone has created and executed different versions of the established pipeline the `dvc exp` tool can be used to list, compare and display metrics, plots, and the output `tifs` (and use these outputs in a potential report as well).
+- The cases of GCBM.Belize and GCBM.Colombia are developed to only be executed in Windows systems but using DVC's functionalities I set up the pipeline to be system-agnostic.
+- Before the DVC pipeline was established, the phases of the workflow had to be executed manually but using DVC anyone can execute the whole workflow with only one command (`dvc repro`)
+- In the cases of the GCBM module, the outputs it generates are for the most part `.tif` files and in the postprocessing step, it generates some metrics and plots. All these outputs are listed and tracked by DVC using md5 hashes. I used DVC's functionality to store files in remote storage and set up a Google Drive repository that stores them.
+- Furthermore, I used DVC's features for metrics and plot files to track these kinds of outputs from the workflow. This way when someone created another version of the GCBM, the `dvc diff` command could be used to compare the metrics from the standard GCBM version to the new one (and use the output in a potential report as well).
+- In the scenario that someone has created and executed different versions of the established pipeline the `dvc exp` tool can be used to list, compare and display metrics, plots, and the output `tifs` (and use these outputs in a potential report as well).
+
 ### How does the DVC pipeline works?
 Pipelines in DVC are developed in `YAML` syntax and are divided into stages. For each stage to be appropriately executed we need to define: 
   - the working directory

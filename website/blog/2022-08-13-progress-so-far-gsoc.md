@@ -2,7 +2,7 @@
 title: Progress so far - 2022 GSoC mentees
 description: Contributions and progress made by the 2022 GSoC mentees
 tags: ['moja-global','gsoc','open-source','internships','mentorship']
-authors: Namyalg
+authors: XiaogangHe
 slug: progress-so-far-gsoc
 hide_table_of_contents: false
 ---

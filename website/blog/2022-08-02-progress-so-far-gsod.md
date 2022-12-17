@@ -2,7 +2,7 @@
 title: Progress so far - 2022 Summer LFX mentees
 description: Contributions and progress made by the 2022 Summer LFX mentees
 tags: ['moja-global','lfx','open-source','internships','mentorship']
-authors: Namyalg
+authors: XiaogangHe
 slug: progress-so-far-lfx-summer
 hide_table_of_contents: false
 ---

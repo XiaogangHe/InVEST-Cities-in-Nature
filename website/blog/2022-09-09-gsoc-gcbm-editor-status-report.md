@@ -2,7 +2,7 @@
 title: 'GSoC: GCBM Simulation Editor - Status Report'
 description: Yash Kandalkar's GSoC Final Evaluation - Weekly Report
 tags: ['moja-global', 'gsoc', 'open-source', 'internships', 'mentorship']
-authors: YashKandalkar
+authors: huiminjoyce
 slug: gsoc-gcbm-editor-status-report
 hide_table_of_contents: false
 ---
