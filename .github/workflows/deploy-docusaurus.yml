@@ -38,8 +38,7 @@ jobs:
       - name: Build Docusaurus website
         run: |
           cd website
-          npm install 
-          npm run build --no-minify
+          yarn
       - name: Build
         run: yarn build 
       - name: Setup Pages
