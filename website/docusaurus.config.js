@@ -9,10 +9,6 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'XiaogangHE', // Usually your GitHub org/user name.
   projectName: 'InVEST tutorials/showcases for NUS Cities in Nature module', // Usually your repo name.
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
   themeConfig: {
     algolia: {
       appId: 'BH4D9OD16A',
