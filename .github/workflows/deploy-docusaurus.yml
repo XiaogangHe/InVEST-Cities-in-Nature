@@ -39,9 +39,9 @@ jobs:
         run: |
           cd website
           npm install 
-          npm run build
+          npm run build --no-minify
       - name: Build
-        run: yarn build --no-minify
+        run: yarn build 
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
