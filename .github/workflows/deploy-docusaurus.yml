@@ -39,7 +39,7 @@ jobs:
         run: |
           cd website
           npm install 
-          npm yarn run
+          npm run build
       - name: Build
         run: yarn build --no-minify
       - name: Setup Pages
