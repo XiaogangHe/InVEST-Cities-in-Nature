@@ -61,7 +61,7 @@ const Feature = ({ Svg, title, description }) => {
 const HomepageFeatures = () => {
   return (
     <>
-      <h1 align="center">Engage with Community</h1>
+      <h1 align="center">Dive Deeper into InVEST</h1>
       <section className={styles.features}>
         <div className="container">
           <div className="col">
