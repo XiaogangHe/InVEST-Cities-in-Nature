@@ -17,9 +17,9 @@ Repository for the InVEST tutorial website, hosting resources for NUS Cities in 
 <a href="https://github.com/XiaogangHe/InVEST-Cities-in-Nature" alt="License">
 <img src="https://img.shields.io/github/license/XiaogangHe/InVEST-Cities-in-Nature.svg" /></a>
 </p>
-</div>
 
 ![Alt](https://repobeats.axiom.co/api/embed/f5d2b95ddc056137d48955cc98a7bfb34dcb08c8.svg "Repobeats analytics image")
+</div>
 
 ## Introduction
 
