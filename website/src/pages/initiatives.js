@@ -38,23 +38,9 @@ const Community = () => {
           <div className={styles.communityRow}>
             <div className={styles.communityItem}>
               <CommunityCard
-                title="Linux Foundation Mentorship"
-                image={LFXLogo}
-                btnLink="/community/mentorship#linux-foundation-mentorship/"
-              />
-            </div>
-            <div className={styles.communityItem}>
-              <CommunityCard
                 title="Google Season of Docs"
                 image={GSODLogo}
                 btnLink="/community/mentorship#google-season-of-docs/"
-              />
-            </div>
-            <div className={styles.communityItem}>
-              <CommunityCard
-                title="Outreachy Internships"
-                image={OutreachyLogo}
-                btnLink="/community/mentorship#outreachy-internships/"
               />
             </div>
             <div className={styles.communityItem}>
@@ -74,13 +60,6 @@ const Community = () => {
                 title="GitHub"
                 image={GithubLogo}
                 btnLink="https://github.com/moja-global"
-              />
-            </div>
-            <div className={styles.communityItem}>
-              <CommunityCard
-                title="Slack"
-                image={SlackLogo}
-                btnLink="https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw"
               />
             </div>
           </div>
