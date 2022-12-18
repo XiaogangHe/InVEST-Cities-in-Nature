@@ -1,7 +1,7 @@
 module.exports = {
   community: [
     'support',
-    'tutorial-1',
+    'contributing',
     'community-website-contributions',
     {
       type: 'category',
