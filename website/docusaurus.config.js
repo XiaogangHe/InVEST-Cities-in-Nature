@@ -124,10 +124,6 @@ module.exports = {
               href: '/initiatives',
             },
             {
-              label: 'Roadmap',
-              href: '/roadmap',
-            },
-            {
               label: 'Case Studies',
               href: '/case-studies/introduction',
             },
