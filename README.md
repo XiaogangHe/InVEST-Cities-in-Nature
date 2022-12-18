@@ -1,9 +1,9 @@
 <div align="center">
-<img src="https://avatars.githubusercontent.com/u/19564969?v=4" alt="moja global logo" height ="auto" width="200" />
+<img src="https://avatars.githubusercontent.com/PREP-NexT" alt="PREP-NexT logo" height ="auto" width="200" />
 <br />
-<h1>Community Website</h1>
+<h1>PREP-NexT Website</h1>
 <p>
-Repository for the moja global community website, a resource for the moja global community.
+Repository for the InVEST tutorial website, hosting resources for NUS Cities in Nature module.
 </p>
 <p align="center">
 <a href="https://github.com/moja-global/community-website" alt="GitHub contributors">
