@@ -1,5 +1,5 @@
 ---
-id: contributing
+id: tutorial-1
 title: Contributing Guidelines
 ---
 
