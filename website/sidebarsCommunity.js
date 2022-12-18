@@ -3,8 +3,6 @@ module.exports = {
     'support',
     'contributing',
     'community-website-contributions',
-    'code-contribution',
-    'docs-contribution',
     'community-contribution',
     {
       type: 'category',
