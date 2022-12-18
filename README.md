@@ -7,7 +7,7 @@ Repository for the InVEST tutorial website, hosting resources for NUS Cities in 
 </p>
 <p align="center">
 <a href="https://github.com/XiaogangHe/InVEST-Cities-in-Nature" alt="GitHub contributors">
-<img src="https://img.shields.io/github/contributors/moja-global/community-website.svg" /></a>
+<img src="https://img.shields.io/github/contributors/XiaogangHe/python-climate-visuals.svg" /></a>
 <a href="https://github.com/XiaogangHe/InVEST-Cities-in-Nature" alt="GitHub issues by-label">
 <img src="https://img.shields.io/github/issues/XiaogangHe/InVEST-Cities-in-Nature" /></a>
 <a href="https://PREP-SHOT.slack.com/" alt="Slack">
@@ -15,7 +15,7 @@ Repository for the InVEST tutorial website, hosting resources for NUS Cities in 
 <a href="https://twitter.com/Xiaogang_He" alt="Twitter Follow">
 <img src="https://img.shields.io/twitter/follow/Xiaogang_He.svg?label=Follow&style=social" /></a>
 <a href="https://github.com/XiaogangHe/InVEST-Cities-in-Nature" alt="License">
-<img src="https://img.shields.io/github/license/moja-global/community-website.svg" /></a>
+<img src="https://img.shields.io/github/license/XiaogangHe/InVEST-Cities-in-Nature.svg" /></a>
 </p>
 </div>
 
