@@ -19,6 +19,8 @@ Repository for the InVEST tutorial website, hosting resources for NUS Cities in 
 </p>
 </div>
 
+![Alt](https://repobeats.axiom.co/api/embed/f5d2b95ddc056137d48955cc98a7bfb34dcb08c8.svg "Repobeats analytics image")
+
 ## Introduction
 
 [Cities in Nature](https://xiaoganghe.github.io/NUS-CDE2503/) is xxx.
@@ -34,4 +36,3 @@ The overall objective is to:
 
 We have a [FAQ](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/community/support/) page that answers common questions around xxx.
 
-![Alt](https://repobeats.axiom.co/api/embed/f5d2b95ddc056137d48955cc98a7bfb34dcb08c8.svg "Repobeats analytics image")
