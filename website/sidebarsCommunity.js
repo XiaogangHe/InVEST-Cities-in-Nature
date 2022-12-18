@@ -2,7 +2,7 @@ module.exports = {
   community: [
     'support',
     'tutorial-1',
-    'community-website-contributions',
+    'invest-urban-cooling',
     {
       type: 'category',
       label: 'Working Groups',
