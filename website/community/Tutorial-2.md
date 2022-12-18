@@ -1,6 +1,6 @@
 ---
-id: community-website-contributions
-title: Contributing to the Community Website
+id: invest-urban-cooling
+title: Tutorial 2
 ---
 
 Community Website is currently under development. We have early users who have already started using it to provide feedback and suggestions. We are also working on a new design and new features and we are looking for help from the community. To get started with the collaboration, please join the **#community-website** channel on our [Slack workspace](https://mojaglobal.slack.com).
