@@ -12,7 +12,7 @@ Repository for the InVEST tutorial website, hosting resources for NUS Cities in 
 <img src="https://img.shields.io/github/issues/moja-global/community-website" /></a>
 <a href="https://mojaglobal.slack.com/" alt="Slack">
 <img src="https://img.shields.io/badge/Slack-@layer5.svg?logo=slack" /></a>
-<a href="https://github.com/moja-global/community-website" alt="Twitter Follow">
+<a href="https://twitter.com/Xiaogang_He" alt="Twitter Follow">
 <img src="https://img.shields.io/twitter/follow/mojaglobal.svg?label=Follow&style=social" /></a>
 <a href="https://github.com/moja-global/community-website" alt="License">
 <img src="https://img.shields.io/github/license/moja-global/community-website.svg" /></a>
