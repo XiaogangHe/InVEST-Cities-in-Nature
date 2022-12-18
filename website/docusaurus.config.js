@@ -49,32 +49,27 @@ module.exports = {
       },
       items: [
         {
-          type: 'localeDropdown',
-          position: 'right',
-        },
-        {
           href: 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature',
           label: 'GitHub',
           position: 'right',
         },
-        { to: '/roadmap', label: 'Roadmap', position: 'right' },
         {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Projects',
+          label: 'Studios',
         },
-        { to: '/blog', label: 'Blogs', position: 'left' },
         {
           to: '/community/support',
-          label: 'Tutorial',
+          label: 'Tutorials',
           position: 'left',
           activeBaseRegex: '/community/',
         },
+        { to: '/blog', label: 'Blogs', position: 'left' },
         {
           type: 'dropdown',
           label: 'Know More',
-          position: 'left',
+          position: 'right',
           items: [
             {
               label: 'Initiatives',
