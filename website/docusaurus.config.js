@@ -85,9 +85,9 @@ module.exports = {
     },
     footer: {
       logo: {
-        alt: 'moja global light logo',
+        alt: 'InVEST Cities in Nature light logo',
         src: '/img/logo-light.png',
-        href: 'https://moja.global',
+        href: 'https://xiaoganghe.github.io/InVEST-Cities-in-Nature/',
       },
       style: 'light',
       links: [
