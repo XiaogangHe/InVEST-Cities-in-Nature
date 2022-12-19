@@ -13,7 +13,7 @@ module.exports = {
     algolia: {
       appId: 'BH4D9OD16A',
       apiKey: '2227dd7224b78071d191aff9cbf1a6c5',
-      indexName: 'moja',
+      indexName: 'invest',
     },
     prism: {
       theme: require('prism-react-renderer/themes/github'),
@@ -168,18 +168,18 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Cities in Nature.`,
     },
-    image: 'https://community.moja.global/img/logo.png',
+    image: 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature/img/logo.png',
     metadatas: [
       { name: 'twitter:card', content: 'summary_large_image' },
       {
         name: 'twitter:image',
-        content: 'https://community.moja.global/img/logo.png',
+        content: 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature/img/logo.png',
       },
-      { name: 'twitter:title', content: 'Moja Global Community' },
+      { name: 'twitter:title', content: 'Cities in Nature' },
       {
         name: 'twitter:description',
         content:
-          'moja global is a not for profit, collaborative project that brings together a community of experts to develop open-source software that allows users to accurately and affordably estimate greenhouse gas emissions and removals from the AFOLU sector. The project’s members aim to support the widest possible use of credible emissions estimation software.',
+          'Tutorial website for NUS Cities in Nature module.',
       },
     ],
   },
@@ -193,11 +193,11 @@ module.exports = {
         },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/moja-global/community-website/edit/main/website/',
+          editUrl: 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature/tree/main/website/',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/moja-global/community-website/edit/main/website/blog/',
+          editUrl: 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature/tree/main/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
