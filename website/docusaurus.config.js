@@ -2,8 +2,8 @@
 module.exports = {
   title: `Cities in Nature`,
   tagline: `Learn how to use InVEST model to quantify ecosystem services`,
-  url: 'https://xiaoganghe.github.io',
-  baseUrl: '/InVEST-Cities-in-Nature/',
+  url: 'https://xiaoganghe.github.io/InVEST-Cities-in-Nature',
+  baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
