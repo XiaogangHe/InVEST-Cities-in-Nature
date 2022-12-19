@@ -7,7 +7,7 @@ module.exports = {
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'XiaogangHE', // Usually your GitHub org/user name.
+  organizationName: 'XiaogangHe', // Usually your GitHub org/user name.
   projectName: 'InVEST tutorials/showcases for NUS Cities in Nature module', // Usually your repo name.
   themeConfig: {
     algolia: {
@@ -152,14 +152,14 @@ module.exports = {
             {
               html: `
               <a href= 'https://www.youtube.com/watch?v=kGau-gNEzFM&t=1s' target="_blank">
-              <img class="socials" src="/static/img/youtube.png" alt="youtube icon" />
+              <img class="socials" src="img/youtube.png" alt="youtube icon" />
               </a>
               `,
             },
             {
               html: `
               <a href= 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature' target="_blank">
-              <img class="socials" src="/static/img/github.png" alt="github icon" />
+              <img class="socials" src="img/github.png" alt="github icon" />
               </a>
               `,
             },
