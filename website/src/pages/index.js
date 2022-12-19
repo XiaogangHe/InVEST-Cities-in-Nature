@@ -65,7 +65,7 @@ const Home = () => {
     <>
       <Layout
         title={`Welcome to ${siteConfig.title}`}
-        description="Description will go into a meta tag in <head />"
+        description="Welcome!"
       >
         <HomepageHeader />
         <main>
