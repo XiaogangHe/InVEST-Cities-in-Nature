@@ -35,27 +35,17 @@ const features = [
       <ul className="features__list">
         <li>
           <a href="https://docs.moja.global/en/latest/prerequisites/index.html">
-            FLINT Prerequisites
-          </a>
-        </li>
-        <li>
-          <a href="https://docs.moja.global/en/latest/DevelopmentSetup/index.html">
-            FLINT Development Setup
+            InVEST Prerequisites
           </a>
         </li>
         <li>
           <a href="https://docs.moja.global/en/latest/GCBMDevelopmentSetup/index.html">
-            GCBM Development Setup
-          </a>
-        </li>
-        <li>
-          <a href="https://docs.moja.global/en/latest/DeveloperWorkflow/index.html">
-            GitHub Workflow
+            InVEST Setup
           </a>
         </li>
         <li>
           <a href="https://docs.moja.global/en/latest/DocumentationStyleGuide/index.html">
-            Writing documentation
+            InVEST documentation
           </a>
         </li>
       </ul>
