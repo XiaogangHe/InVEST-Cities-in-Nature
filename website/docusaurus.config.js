@@ -163,6 +163,13 @@ module.exports = {
               </a>
               `,
             },
+            {
+              html: `
+              <a href= 'https://twitter.com/Xiaogang_He' target="_blank">
+              <img class="socials" src="img/twitter.png" alt="twitter icon" />
+              </a>
+              `,
+            },
           ],
         },
       ],
