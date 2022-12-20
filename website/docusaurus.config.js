@@ -61,9 +61,15 @@ module.exports = {
         },
         {
           to: '/community/support',
-          label: 'Tutorials',
+          label: 'Community',
           position: 'left',
           activeBaseRegex: '/community/',
+        },
+        {
+          to: '/tutorial/tutorial-intro',
+          label: 'Tutorials',
+          position: 'left',
+          activeBaseRegex: '/tutorial/',
         },
         { to: '/blog', label: 'Blogs', position: 'left' },
         {

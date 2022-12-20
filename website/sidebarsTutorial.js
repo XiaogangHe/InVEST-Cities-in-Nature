@@ -1,4 +1,4 @@
 module.exports = {
-    community: ['tutorial-introduction'],
+    tutorial: ['tutorial-intro'],
   }
   

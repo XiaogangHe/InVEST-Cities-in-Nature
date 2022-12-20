@@ -1,7 +1,7 @@
 ---
-id: tutorial-introduction
-title: Introduction to moja global tutorials
-slug: /tutorial-introduction
+id: tutorial-intro
+title: InVEST Introduction 
+slug: /tutorial-intro
 ---
 
-This section will host the tutorials under moja global.
+This section will host the tutorials for xxx.
