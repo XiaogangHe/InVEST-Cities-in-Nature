@@ -120,29 +120,8 @@ module.exports = {
               href: '/blog',
             },
             {
-              label: 'Initiatives',
-              href: '/initiatives',
-            },
-            {
-              label: 'Case Studies',
-              href: '/case-studies/introduction',
-            },
-            {
               label: 'FAQs',
               href: 'https://docs.moja.global/en/latest/faq.html',
-            },
-          ],
-        },
-        {
-          title: 'Getting Started',
-          items: [
-            {
-              label: 'About InVEST',
-              href: '/docs/about-moja-global',
-            },
-            {
-              label: 'Model Overview',
-              href: '/community/governance',
             },
           ],
         },
@@ -153,13 +132,6 @@ module.exports = {
               html: `
               <a href= 'https://www.youtube.com/watch?v=kGau-gNEzFM&t=1s' target="_blank">
               <img class="socials" src="img/youtube.png" alt="youtube icon" />
-              </a>
-              `,
-            },
-            {
-              html: `
-              <a href= 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature' target="_blank">
-              <img class="socials" src="img/github.png" alt="github icon" />
               </a>
               `,
             },
