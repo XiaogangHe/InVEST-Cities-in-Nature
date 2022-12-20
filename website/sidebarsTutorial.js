@@ -1,5 +1,5 @@
 module.exports = {
-  resources: [
+  tutorial: [
     'support',
     'tutorial-1',
     'invest-urban-cooling',

@@ -49,15 +49,16 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature',
-          label: 'GitHub',
-          position: 'right',
-        },
-        {
           type: 'doc',
           docId: 'intro',
           position: 'left',
+          label: 'Docs',
+        },
+        {
+          to: '/studio/overview',
           label: 'Studios',
+          position: 'left',
+          activeBaseRegex: '/studio/',
         },
         {
           to: '/tutorial/support',
@@ -65,7 +66,7 @@ module.exports = {
           position: 'left',
           activeBaseRegex: '/tutorial/',
         },
-        { to: '/blog', label: 'Blogs', position: 'left' },
+        { to: '/blog', label: 'Blogs', position: 'right' },
         {
           type: 'dropdown',
           label: 'Know More',
@@ -80,6 +81,11 @@ module.exports = {
               href: '/case-studies/introduction',
             },
           ],
+        },
+        {
+          href: 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
@@ -109,7 +115,7 @@ module.exports = {
           ],
         },
         {
-          title: 'Community',
+          title: 'More',
           items: [
             {
               label: 'Projects',
@@ -145,7 +151,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Cities in Nature.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Xiaogang HE`,
     },
     image: 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature/img/logo.png',
     metadatas: [
@@ -197,6 +203,15 @@ module.exports = {
         path: 'tutorial',
         routeBasePath: 'tutorial',
         sidebarPath: require.resolve('./sidebarsTutorial.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'studio',
+        path: 'studio',
+        routeBasePath: 'studio',
+        sidebarPath: require.resolve('./sidebarsStudio.js'),
       },
     ],
     [
