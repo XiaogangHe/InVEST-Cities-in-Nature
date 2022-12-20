@@ -212,6 +212,8 @@ module.exports = {
         path: 'studio',
         routeBasePath: 'studio',
         sidebarPath: require.resolve('./sidebarsStudio.js'),
+        showLastUpdateTime: true,
+        showLastUpdateAuthor: false,
       },
     ],
     [
