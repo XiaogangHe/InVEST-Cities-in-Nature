@@ -43,7 +43,7 @@ module.exports = {
       title: 'InVEST',
       hideOnScroll: true,
       logo: {
-        alt: 'moja global Logo',
+        alt: 'InVEST Cities in Nature Logo',
         src: 'img/logo.png',
         srcDark: 'img/logo-light.png',
       },
@@ -141,7 +141,7 @@ module.exports = {
               href: '/docs/about-moja-global',
             },
             {
-              label: 'Model Overview',
+              label: 'Model Overview :octocat:',
               href: '/community/governance',
             },
           ],

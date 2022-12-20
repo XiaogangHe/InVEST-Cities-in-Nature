@@ -18,7 +18,7 @@ const FeatureList = [
   },
   {
     title: 'Studio Projects',
-    Svg: require('../../../static/img/learn-more.svg').default,
+    Svg: require('../../../static/img/code-in-nature.svg').default,
     description: (
       <>
         You will use InVEST to xxx.
