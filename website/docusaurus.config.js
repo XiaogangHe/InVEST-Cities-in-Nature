@@ -132,19 +132,26 @@ module.exports = {
           ],
         },
         {
-          title: 'Follow Us',
+          title: 'Social',
           items: [
             {
               html: `
               <a href= 'https://www.youtube.com/watch?v=kGau-gNEzFM&t=1s' target="_blank">
-              <img class="socials" src="img/youtube.png" alt="youtube icon" />
+              <img class="socials" src="../img/youtube.png" alt="youtube icon" />
               </a>
               `,
             },
             {
               html: `
               <a href= 'https://twitter.com/Xiaogang_He' target="_blank">
-              <img class="socials" src="img/twitter.png" alt="twitter icon" />
+              <img class="socials" src="../img/twitter.png" alt="twitter icon" />
+              </a>
+              `,
+            },
+            {
+              html: `
+              <a href= 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature' target="_blank">
+              <img class="socials" src="../img/github.png" alt="github icon" />
               </a>
               `,
             },
