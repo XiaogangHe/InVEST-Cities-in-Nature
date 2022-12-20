@@ -141,7 +141,7 @@ module.exports = {
               href: '/docs/about-moja-global',
             },
             {
-              label: 'Model Overview :octocat:',
+              label: 'Model Overview',
               href: '/community/governance',
             },
           ],
