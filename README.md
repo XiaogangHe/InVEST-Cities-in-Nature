@@ -1,7 +1,7 @@
 <div align="center">
-<img src="https://avatars.githubusercontent.com/PREP-NexT" alt="PREP-NexT logo" height ="auto" width="200" />
+<img src="https://github.com/XiaogangHe/InVEST-Cities-in-Nature/blob/main/website/static/img/logo-light.png" alt="Citis in Nature logo" height ="auto" width="200" />
 <br />
-<h1>PREP-NexT Website</h1>
+<h1>InVEST Cities in Nature Website</h1>
 <p>
 Repository for the InVEST tutorial website, hosting resources for NUS Cities in Nature module.
 </p>
