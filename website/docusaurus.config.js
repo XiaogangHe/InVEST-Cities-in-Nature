@@ -60,13 +60,7 @@ module.exports = {
           label: 'Studios',
         },
         {
-          to: '/community/support',
-          label: 'Community',
-          position: 'left',
-          activeBaseRegex: '/community/',
-        },
-        {
-          to: '/tutorial/tutorial-intro',
+          to: '/tutorial/support',
           label: 'Tutorials',
           position: 'left',
           activeBaseRegex: '/tutorial/',
@@ -199,10 +193,10 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'community',
-        path: 'community',
-        routeBasePath: 'community',
-        sidebarPath: require.resolve('./sidebarsCommunity.js'),
+        id: 'tutorial',
+        path: 'tutorial',
+        routeBasePath: 'tutorial',
+        sidebarPath: require.resolve('./sidebarsTutorial.js'),
       },
     ],
     [
@@ -212,15 +206,6 @@ module.exports = {
         path: 'case-studies',
         routeBasePath: 'case-studies',
         sidebarPath: require.resolve('./sidebarsCaseStudies.js'),
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'tutorial-introduction',
-        path: 'tutorial',
-        routeBasePath: 'tutorial',
-        sidebarPath: require.resolve('./sidebarsTutorial.js'),
       },
     ],
   ],
