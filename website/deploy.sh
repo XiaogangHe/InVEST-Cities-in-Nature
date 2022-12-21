@@ -12,4 +12,5 @@ cd build
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:XiaogangHe/InVEST-Cities-in-Nature.git master:gh-pages
+#git push -f git@github.com:XiaogangHe/InVEST-Cities-in-Nature.git main:gh-pages
+git push -f https://github.com/XiaogangHe/InVEST-Cities-in-Nature.git main:gh-pages
