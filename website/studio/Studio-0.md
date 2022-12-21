@@ -1,6 +1,7 @@
 ---
 id: overview
 title: Studio Overview
+slug: '/'
 ---
 
 Intro to studio projects.
