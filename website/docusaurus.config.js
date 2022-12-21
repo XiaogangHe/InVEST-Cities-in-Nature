@@ -66,7 +66,7 @@ module.exports = {
           position: 'left',
           activeBaseRegex: '/tutorial/',
         },
-        { to: '/blog/', label: 'Blogs', position: 'right', activeBaseRegex: '/blog/' },
+        { to: '/blog', label: 'Blogs', position: 'right', activeBaseRegex: '/blog' },
         {
           type: 'dropdown',
           label: 'Know More',
