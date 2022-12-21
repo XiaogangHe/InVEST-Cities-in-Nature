@@ -67,7 +67,6 @@ module.exports = {
           activeBaseRegex: '/tutorial/',
         },
         { to: '/blog/', label: 'Blogs', position: 'right', activeBaseRegex: '/blog/' },
-        { to: '/resource', label: 'Resources', position: 'left' },
         {
           type: 'dropdown',
           label: 'Know More',
@@ -222,14 +221,6 @@ module.exports = {
         sidebarPath: require.resolve('./sidebarsStudio.js'),
         showLastUpdateTime: true,
         showLastUpdateAuthor: false,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        id: 'resource',
-        path: 'resource',
-        routeBasePath: 'resource',
       },
     ],
     [
