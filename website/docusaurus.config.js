@@ -69,13 +69,9 @@ module.exports = {
         { to: '/blog/', label: 'Blogs', position: 'right', activeBaseRegex: '/blog/' },
         {
           type: 'dropdown',
-          label: 'Know More',
+          label: 'Learn More',
           position: 'right',
           items: [
-            {
-              label: 'Initiatives',
-              href: '/initiatives',
-            },
             {
               label: 'Case Studies',
               href: '/case-studies/introduction',
