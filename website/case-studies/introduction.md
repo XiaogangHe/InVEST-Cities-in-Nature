@@ -1,6 +1,6 @@
 ---
 id: case-studies-introduction
-title: Cities in Nature - Case studies
+title: Overview of All Case studies
 slug: /introduction
 ---
 
