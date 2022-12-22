@@ -6,7 +6,7 @@ module.exports = {
   baseUrl: '/InVEST-Cities-in-Nature/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'XiaogangHe', // Usually your GitHub org/user name.
   projectName: 'InVEST tutorials/showcases for NUS Cities in Nature module', // Usually your repo name.
   themeConfig: {
