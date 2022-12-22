@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[7981],{3549:function(e){e.exports=JSON.parse('{"allTagsPath":"/InVEST-Cities-in-Nature/blog/tags","slug":"/InVEST-Cities-in-Nature/blog/tags/cities-in-nature","name":"Cities-in-Nature","count":1,"permalink":"/InVEST-Cities-in-Nature/blog/tags/cities-in-nature"}')}}]);

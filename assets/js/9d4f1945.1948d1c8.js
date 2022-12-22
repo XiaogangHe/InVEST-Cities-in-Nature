@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[9347],{7441:function(e){e.exports=JSON.parse('{"allTagsPath":"/InVEST-Cities-in-Nature/blog/tags","slug":"/InVEST-Cities-in-Nature/blog/tags/cooling","name":"Cooling","count":1,"permalink":"/InVEST-Cities-in-Nature/blog/tags/cooling"}')}}]);
