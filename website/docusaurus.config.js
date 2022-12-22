@@ -61,7 +61,7 @@ module.exports = {
           activeBaseRegex: '/studio/',
         },
         {
-          to: '/tutorial/support',
+          to: '/tutorial/overview',
           label: 'Tutorials',
           position: 'left',
           activeBaseRegex: '/tutorial/',
@@ -128,7 +128,7 @@ module.exports = {
           ],
         },
         {
-          title: 'Social',
+          title: 'Follow',
           items: [
             {
               html: `

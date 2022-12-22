@@ -1,6 +1,6 @@
 module.exports = {
   tutorial: [
-    'support',
+    'overview',
     'tutorial-1',
     'invest-urban-cooling',
     {
@@ -8,7 +8,7 @@ module.exports = {
       label: 'Working Groups',
       items: ['working-groups/doc-wg', 'working-groups/ui-wg'],
     },
-    'community-contribution',
+    'support',
   ],
 };
 
