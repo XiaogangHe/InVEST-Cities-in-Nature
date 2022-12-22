@@ -137,21 +137,21 @@ module.exports = {
             {
               html: `
               <a href= 'https://www.youtube.com/watch?v=kGau-gNEzFM&t=1s' target="_blank">
-              <img class="socials" src="https://xiaoganghe.github.io/InVEST-Cities-in-Nature/img/youtube.png" alt="youtube icon" />
+              <img class="socials" src="https://xiaoganghe.github.io/InVEST-Cities-in-Nature/footer-logos/youtube.png" alt="youtube icon" />
               </a>
               `,
             },
             {
               html: `
               <a href= 'https://twitter.com/Xiaogang_He' target="_blank">
-              <img class="socials" src="https://xiaoganghe.github.io/InVEST-Cities-in-Nature/img/twitter.png" alt="twitter icon" />
+              <img class="socials" src="https://xiaoganghe.github.io/InVEST-Cities-in-Nature/footer-logos/twitter.png" alt="twitter icon" />
               </a>
               `,
             },
             {
               html: `
               <a href= 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature' target="_blank">
-              <img class="socials" src="https://xiaoganghe.github.io/InVEST-Cities-in-Nature/img/github.png" alt="github icon" />
+              <img class="socials" src="https://xiaoganghe.github.io/InVEST-Cities-in-Nature/footer-logos/github.png" alt="github icon" />
               </a>
               `,
             },
