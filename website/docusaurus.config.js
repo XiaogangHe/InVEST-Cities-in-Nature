@@ -206,6 +206,7 @@ module.exports = {
         path: 'tutorial',
         routeBasePath: 'tutorial',
         sidebarPath: require.resolve('./sidebarsTutorial.js'),
+        editUrl: 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature/tree/main/website/',
       },
     ],
     [
@@ -217,6 +218,7 @@ module.exports = {
         sidebarPath: require.resolve('./sidebarsStudio.js'),
         showLastUpdateTime: true,
         showLastUpdateAuthor: false,
+        editUrl: 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature/tree/main/website/',
       },
     ],
     [
