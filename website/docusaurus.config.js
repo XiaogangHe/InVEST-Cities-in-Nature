@@ -40,7 +40,7 @@ module.exports = {
       },
     },
     navbar: {
-      title: 'InVEST',
+      title: 'Cities in Nature',
       hideOnScroll: true,
       logo: {
         alt: 'InVEST Cities in Nature Logo',
@@ -52,7 +52,7 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Docs',
+          label: 'InVEST',
         },
         {
           to: '/studio/overview',
