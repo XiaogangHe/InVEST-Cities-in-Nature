@@ -8,7 +8,7 @@ keywords:
 description:  Powering Deforestation prediction using Artificial Intelligence at Myanmar and Philippines
 ---
 
-![Cover Image for the case study titled `Powering Deforestation prediction using Artificial Intelligence`](../static/img/powering-deforestation-prediction-using-artificial-intelligence.png)
+![Cover Image for the case study titled `Powering Deforestation prediction using Artificial Intelligence`](../static/img/logo-with-text.png)
 
 Forestry xxx.
 
