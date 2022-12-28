@@ -5,8 +5,8 @@ module.exports = {
     'invest-urban-cooling',
     {
       type: 'category',
-      label: 'Working Groups',
-      items: ['working-groups/doc-wg', 'working-groups/ui-wg'],
+      label: 'GIS Basics',
+      items: ['gis-tutorials/doc-wg', 'gis-tutorials/ui-wg'],
     },
     'support',
   ],

@@ -7,6 +7,5 @@ import WGStatus from '@site/src/components/WGStatus';
 
 <WGStatus status="active"/>
 
-xxx
+Contents coming soon.
 
-We are looking forward to your contributions!

@@ -18,9 +18,9 @@ xxx.
 ### Sample Table 
 | Purpose         | Tools and Technologies used |
 | --------------- | --------------------------- |
-| InVEST Cooling  | CML, GitHubActions, Docker  | 
-| InVEST Flooding | DVC, Python, R              |
-| InVEST Carbon   | DVC, Python, R, gdal        |
+| InVEST Cooling  | GIS, GitHubActions, Docker  | 
+| InVEST Flooding | GIS, Python, R              |
+| InVEST Carbon   | GIS, Python, R, gdal        |
 
 ### New title
 - xxx
@@ -37,18 +37,6 @@ modify_xxx_parameters       Outputs logs\modify_spinup_parameters.log
 run_InVEST                  Outputs ..\logs\Moja_Debug.log
 compile_results             Outputs ..\..\logs\compile_results.log
 post_processing             Reports metrics\1900-1950_Deadwood_Tropical_Dry.json, metrics\1900-1950_Deadwoo…
-```
-You can display the metrics by typing:
-```shell
-$ dvc metrics show
-Path                                                          area_sum_mean    pool_tc_per_ha_mean    pool_tc_sum_mean
-metrics\1900-1950_Deadwood_Tropical_Dry.json                  1142790.3823     8.46574                9674571.56838   
-...
-```
-You can test the pipeline by typing:
-```shell
-$ dvc repro # or 
-$ dvc exp run
 ```
 
 ## Final Thoughts
