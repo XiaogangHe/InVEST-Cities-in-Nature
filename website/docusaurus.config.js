@@ -217,7 +217,7 @@ module.exports = {
         routeBasePath: 'studio',
         sidebarPath: require.resolve('./sidebarsStudio.js'),
         showLastUpdateTime: true,
-        showLastUpdateAuthor: false,
+        showLastUpdateAuthor: true,
         editUrl: 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature/tree/main/website/',
       },
     ],
