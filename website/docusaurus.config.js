@@ -94,19 +94,19 @@ module.exports = {
       style: 'light',
       links: [
         {
-          title: 'InVEST Models',
+          title: 'Links',
           items: [
             {
-              label: 'Urban Flooding',
-              href: 'https://moja.global/flint/',
+              label: 'Course Website',
+              href: 'https://xiaoganghe.github.io/NUS-CDE2503/',
             },
             {
-              label: 'Carbon Sequestration',
-              href: 'https://docs.moja.global/projects/flint-ui/en/latest/',
+              label: 'InVEST Workshops',
+              href: 'https://www.youtube.com/playlist?list=PLSFk2iLV3UfNqRZGwfcgyoZZZqZDnj2V7',
             },
             {
-              label: 'Urban Cooling',
-              href: 'https://docs.moja.global/projects/flint-reporting/en/latest/',
+              label: 'NUS Cities',
+              href: 'https://cde.nus.edu.sg/nuscities/',
             },
           ],
         },
@@ -115,7 +115,7 @@ module.exports = {
           items: [
             {
               label: 'Projects',
-              href: '/docs',
+              href: 'studio/overview',
             },
             {
               label: 'Blogs',
@@ -123,7 +123,7 @@ module.exports = {
             },
             {
               label: 'FAQs',
-              href: 'https://docs.moja.global/en/latest/faq.html',
+              href: '/tutorial/support',
             },
           ],
         },

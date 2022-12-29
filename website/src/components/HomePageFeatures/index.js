@@ -4,21 +4,23 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Code',
-    Svg: require('../../../static/img/code.svg').default,
+    title: 'Value of Nature',
+    Svg: require('../../../static/img/investing-in-nature.svg').default,
     description: (
       <>
-        InVEST is an open source xxx.
-        InVEST is an open source xxx.
-        InVEST is an open source xxx.
-        InVEST is an open source xxx.
-        InVEST is an open source xxx.
+        More to add. More to add.
+        More to add. More to add.
+        More to add. More to add.
+        More to add. More to add.
+        More to add. More to add.
+        More to add. More to add.
+        More to add. More to add.
       </>
     ),
   },
   {
     title: 'Studio Projects',
-    Svg: require('../../../static/img/code-in-nature.svg').default,
+    Svg: require('../../../static/img/holding-the-arrow.svg').default,
     description: (
       <>
         You will use InVEST to xxx.
@@ -30,7 +32,7 @@ const FeatureList = [
   },
   {
     title: 'Getting Started',
-    Svg: require('../../../static/img/write.svg').default,
+    Svg: require('../../../static/img/code-in-nature.svg').default,
     description: (
       <>
         You will use InVEST to xxx.

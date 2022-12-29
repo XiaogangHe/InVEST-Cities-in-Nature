@@ -22,7 +22,7 @@ const HomepageHeader = () => {
               'button button--outline button--secondary button--lg',
               styles.getStarted
             )}
-            to="/docs/"
+            to="/studio/overview"
           >
             Know your Projects
           </Link>
@@ -40,7 +40,7 @@ const HomepageHeader = () => {
               'button button--outline button--primary button--lg',
               styles.getStarted
             )}
-            to="/community/support/"
+            to="tutorial/support"
           >
             FAQs
           </Link>
