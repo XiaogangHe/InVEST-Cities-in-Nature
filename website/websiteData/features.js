@@ -5,26 +5,26 @@ const features = [
     description: (
       <ul className="features__list">
         <li>
-          <a href="/docs/">Introduction to InVEST</a>
-        </li>
-        <li>
-          <a href="/docs/about-moja-global">About InVEST</a>
+          <a href="/InVEST-Cities-in-Nature/docs/invest-intro">About InVEST</a>
         </li>
       </ul>
     ),
   },
   {
-    title: 'Models',
+    title: 'InVEST Models',
     description: (
       <ul className="features__list">
         <li>
-          <a href="/docs/FLINT/About">Urban Cooling</a>
+          <a href="/InVEST-Cities-in-Nature/docs/Urban-Cooling/about">Urban Cooling</a>
         </li>
         <li>
-          <a href="/docs/FLINT-Cloud/About">Urban Flooding</a>
+          <a href="/InVEST-Cities-in-Nature/docs/Flood-Risk-Mitigation/about">Urban Flood Risk Mitigation</a>
         </li>
         <li>
-          <a href="/docs/FLINT-Reporting-Tool/About">Carbon Sequestration</a>
+          <a href="/InVEST-Cities-in-Nature/docs/Coastal-Vulnerability/about">Coastal Vulnerability</a>
+        </li>
+        <li>
+          <a href="/InVEST-Cities-in-Nature/docs/Carbon-Storage-and-Sequestration/about">Carbon Storage and Sequestration</a>
         </li>
       </ul>
     ),
@@ -34,36 +34,18 @@ const features = [
     description: (
       <ul className="features__list">
         <li>
-          <a href="https://docs.moja.global/en/latest/prerequisites/index.html">
+          <a href="https://naturalcapitalproject.stanford.edu/software/invest">
             InVEST Prerequisites
           </a>
         </li>
         <li>
-          <a href="https://docs.moja.global/en/latest/GCBMDevelopmentSetup/index.html">
+          <a href="https://naturalcapitalproject.stanford.edu/software/invest">
             InVEST Setup
           </a>
         </li>
         <li>
-          <a href="https://docs.moja.global/en/latest/DocumentationStyleGuide/index.html">
-            InVEST documentation
-          </a>
-        </li>
-      </ul>
-    ),
-  },
-  {
-    title: 'Documentation',
-    description: (
-      <ul className="features__list">
-        <li>
-          <a href="https://docs.moja.global/">InVEST Cities in Nature Website</a>
-        </li>
-        <li>
-          <a href="https://docs.moja.global/projects/flint-reporting/en/latest/">InVEST Reporting</a>
-        </li>
-        <li>
-          <a href="https://docs.moja.global/projects/GCBM-Chile-Data-Preprocessing-Tools/en/latest/">
-            InVEST Land Use Scenario Generation Tools
+          <a href="https://naturalcapitalproject.stanford.edu/software/invest">
+            InVEST Data
           </a>
         </li>
       </ul>
@@ -91,13 +73,10 @@ const features = [
     description: (
       <ul className="features__list">
         <li>
-          <a href="https://docs.moja.global/en/latest/faq.html">Frequently Asked Questions</a>
+          <a href="/InVEST-Cities-in-Nature/tutorial/support">Frequently Asked Questions</a>
         </li>
         <li>
-          <a href="/tutorial/tutorial-introduction">Tutorials</a>
-        </li>
-        <li>
-          <a href="/case-studies/introduction">Case studies</a>
+          <a href="/InVEST-Cities-in-Nature/case-studies/introduction">Case studies</a>
         </li>
       </ul>
     ),
