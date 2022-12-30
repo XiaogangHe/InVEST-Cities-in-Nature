@@ -34,5 +34,5 @@ The overall objective is to:
 
 ### Frequently Asked Questions
 
-We have a [FAQ](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/community/support/) page that answers common questions around xxx.
+We have a [FAQ](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/tutorial/support) page that answers common questions around xxx.
 
