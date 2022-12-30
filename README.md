@@ -21,7 +21,7 @@ Repository for the InVEST tutorial website, hosting resources for NUS Cities in 
 ![Alt](https://repobeats.axiom.co/api/embed/f5d2b95ddc056137d48955cc98a7bfb34dcb08c8.svg "Repobeats analytics image")
 </div>
 
-## Introduction
+## About
 
 [Cities in Nature](https://xiaoganghe.github.io/NUS-CDE2503/) is xxx.
 
@@ -32,7 +32,6 @@ The overall objective is to:
 - Introduce xxx.
 - Explain xxx.
 
-### Frequently Asked Questions
+### Credit
 
-We have a [FAQ](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/tutorial/support) page that answers common questions around xxx.
-
+Inspired by the [Community Website of moja global](https://github.com/moja-global/community-website).
