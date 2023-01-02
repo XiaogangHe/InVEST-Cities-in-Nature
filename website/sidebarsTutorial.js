@@ -5,6 +5,7 @@ module.exports = {
     'invest-urban-cooling',
     {
       type: 'category',
+      collapsed: true,
       label: 'GIS Basics',
       items: ['gis-tutorials/doc-wg', 'gis-tutorials/ui-wg'],
     },
