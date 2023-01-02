@@ -15,6 +15,8 @@ InVEST is xxx [[1]](#1).
 ## Project Description 📌
 xxx.
 
+<!--truncate-->
+
 ### Sample Table 
 | Purpose         | Tools and Technologies used |
 | --------------- | --------------------------- |
