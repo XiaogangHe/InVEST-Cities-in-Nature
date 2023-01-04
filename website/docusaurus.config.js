@@ -115,7 +115,7 @@ module.exports = {
           items: [
             {
               label: 'Projects',
-              href: 'studio/overview',
+              href: '/studio/overview',
             },
             {
               label: 'Blogs',
