@@ -40,7 +40,7 @@ const HomepageHeader = () => {
               'button button--outline button--primary button--lg',
               styles.getStarted
             )}
-            to="tutorial/support"
+            to="studio/support"
           >
             FAQs
           </Link>
