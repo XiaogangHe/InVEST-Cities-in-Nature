@@ -7,5 +7,6 @@ module.exports = {
     'studio-4',
     'studio-5',
     'studio-FAQs',
+    'studio-support',
   ],
 };
