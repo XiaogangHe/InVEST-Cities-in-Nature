@@ -4,15 +4,28 @@ title: Overview
 slug: /overview
 ---
 
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '3px',
+      color: 'white',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+
 ## Studio Schedules
 
-| Studio #                  | Date         | Week # | Type[^1]        |
-| --------------------------| ------------ | -------| ----------------|
-| [Studio 1](./studio-1)    | Feb 6, 2023  | 5      | Working 🔍      |
-| [Studio 2](./studio-2)    | Feb 27, 2023 | 7      | Presentation 🎤 |
-| [Studio 3](./studio-3)    | Mar 10, 2023 | 10     | Presentation 🎤 |
-| [Studio 4](./studio-4)    | Apr 3, 2023  | 12     | Working 🔍      |
-| [Studio 5](./studio-5)    | Apr 10, 2023 | 13     | Presentation 🎤 |
+| Studio #                  | Date         | Week # | Type[^1]                                                   |
+| --------------------------| ------------ | -------| -----------------------------------------------------------|
+| [Studio 1](./studio-1)    | Feb 6, 2023  | 5      | <Highlight color="rgb(13, 100, 81)">Working 🔍</Highlight> |
+| [Studio 2](./studio-2)    | Feb 27, 2023 | 7      | <Highlight color="#0e7490">Presentation 🎤</Highlight>     |
+| [Studio 3](./studio-3)    | Mar 10, 2023 | 10     | <Highlight color="#0e7490">Presentation 🎤</Highlight>     |
+| [Studio 4](./studio-4)    | Apr 3, 2023  | 12     | <Highlight color="rgb(13, 100, 81)">Working 🔍</Highlight> |
+| [Studio 5](./studio-5)    | Apr 10, 2023 | 13     | <Highlight color="#0e7490">Presentation 🎤</Highlight>     |
 
 [^1]: Please explain xxx. 
 
