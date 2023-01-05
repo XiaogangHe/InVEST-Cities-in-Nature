@@ -8,13 +8,9 @@ const FeatureList = [
     Svg: require('../../../static/img/investing-in-nature.svg').default,
     description: (
       <>
-        More to add. More to add.
-        More to add. More to add.
-        More to add. More to add.
-        More to add. More to add.
-        More to add. More to add.
-        More to add. More to add.
-        More to add. More to add.
+        Put a price tag on Nature.  
+        <br />
+        Incorporate ecosystem services into decision-making. 
       </>
     ),
   },
@@ -23,22 +19,20 @@ const FeatureList = [
     Svg: require('../../../static/img/holding-the-arrow.svg').default,
     description: (
       <>
-        You will use InVEST to xxx.
-        You will use InVEST to xxx.
-        You will use InVEST to xxx.
-        You will use InVEST to xxx.
+        Problem-driven case studies. 
+        <br />
+        Role-play different stakeholders. 
       </>
     ),
   },
   {
-    title: 'Getting Started',
+    title: 'Actionable Insights',
     Svg: require('../../../static/img/code-in-nature.svg').default,
     description: (
       <>
-        You will use InVEST to xxx.
-        You will use InVEST to xxx.
-        You will use InVEST to xxx.
-        You will use InVEST to xxx.
+        Use InVEST to do powerful analytics. 
+        <br />
+        Actionable numbers facilitate effective decision making. 
       </>
     ),
   },
@@ -63,7 +57,7 @@ const Feature = ({ Svg, title, description }) => {
 const HomepageFeatures = () => {
   return (
     <>
-      <h1 align="center">Dive Deeper into InVEST</h1>
+      <h1 align="center">Harnessing Nature to Design Resilient Cities</h1>
       <section className={styles.features}>
         <div className="container">
           <div className="col">
