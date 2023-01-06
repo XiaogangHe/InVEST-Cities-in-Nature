@@ -7,6 +7,12 @@ const features = [
         <li>
           <a href="/InVEST-Cities-in-Nature/docs/invest-intro">About InVEST</a>
         </li>
+        <li>
+          <a href="/InVEST-Cities-in-Nature/docs/invest-intro#download-and-install">Setup</a>
+        </li>
+        <li>
+          <a href="/InVEST-Cities-in-Nature/docs/invest-intro#quick-demo">Quick Demo</a>
+        </li>
       </ul>
     ),
   },
