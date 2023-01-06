@@ -1,21 +1,50 @@
 ---
 id: intro
-title: About
+title: Introduction
 sidebar_position: 1
 slug: '/invest-intro'
 ---
 
-## Welcome 👏 
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '3px',
+      color: 'white',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
 
-Learn more about [**InVEST**](https://naturalcapitalproject.stanford.edu/software/invest) and the following models:
+## What is InVEST?
+[**InVEST**](https://naturalcapitalproject.stanford.edu/software/invest) stands for <ins>**In**</ins>tegrated <ins>**V**</ins>aluation of <ins>**E**</ins>cosystem <ins>**S**</ins>ervices and <ins>**T**</ins>radeoffs. It is developed by Stanford's [Natural Capital Project](https://naturalcapitalproject.stanford.edu/).
 
-- [**InVEST Urban Cooling**](/02-Urban-Cooling/Intro-InVEST-Urban-Cooling.mdx): xxx.
-- [**InVEST Urban Flood Risk Mitigation**](/03-Flood-Risk-Mitigation/Intro-InVEST-Urban-Flooding.mdx): xxx.
-- [**InVEST Coastal Vulnerability**](/04-Coastal-Vulnerability/Intro-InVEST-Coastal-Vulnerability.mdx): xxx.
-- [**InVEST Carbon Storage and Sequestration**](/05-Carbon-Storage-and-Sequestration/Intro-InVEST-Carbon-Storage-and-Sequestration.mdx): xxx.
+:::info TL;DL  
+<center><img src="../img/invest-logo.png" alt="invest logomark" width="150"/></center>
 
-## [**Data Sources**](https://naturalcapitalproject.stanford.edu/software/invest)
-InVEST is a suite of free, open-source software that you can download on your own laptops/computers. 
+[InVEST](https://naturalcapitalproject.stanford.edu/software/invest) is a family of tools for quantifying the values of natural capital in clear, credible, and practical ways. In promising a return (of societal benefits) on investments in nature, the scientific community needs to deliver knowledge and tools to quantify and forecast this return. InVEST enables decision-makers to quantify the importance of natural capital, to assess the tradeoffs associated with alternative choices, and to integrate conservation and human development.[^1] 
+
+[^1]: From [InVEST Documentation](https://invest.readthedocs.io/en/latest/#).
+:::
+
+## Model Suites
+
+The InVEST Workbench has more than 15 models that can quantify nature's value related to water, food, energy, and carbon. See the full list [here](https://naturalcapitalproject.stanford.edu/software/invest). For our Studio Projects, we will be focusing on the following InVEST models:
+
+- [**Urban Cooling**](/02-Urban-Cooling/Intro-InVEST-Urban-Cooling.mdx)
+- [**Urban Flood Risk Mitigation**](/03-Flood-Risk-Mitigation/Intro-InVEST-Urban-Flooding.mdx)
+- [**Coastal Vulnerability**](/04-Coastal-Vulnerability/Intro-InVEST-Coastal-Vulnerability.mdx)
+- [**Carbon Storage and Sequestration**](/05-Carbon-Storage-and-Sequestration/Intro-InVEST-Carbon-Storage-and-Sequestration.mdx)
+
+## Download and Install
+Provide details here.
+
+## Quick Demo
+Insert a video here?
+
+## Data Sources
+Provide details on where to download the input files. 
 
 :::caution Work in Progress 🚧
 
