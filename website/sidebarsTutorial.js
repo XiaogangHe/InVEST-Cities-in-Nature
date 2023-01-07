@@ -9,7 +9,6 @@ module.exports = {
       label: 'GIS Basics',
       items: ['gis-tutorials/doc-wg', 'gis-tutorials/ui-wg'],
     },
-    'support',
   ],
 };
 
