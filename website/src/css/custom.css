@@ -79,6 +79,17 @@ html[data-theme='dark'] .sponsor_wrapper:hover {
   box-shadow: 0 5px 25px rgba(91, 180, 125, 0.66);
 }
 
+blockquote {
+  background: #709ba4;
+  border-left: 7px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  color: white;
+}
+blockquote p {
+  display: inline-block;
+}
+
 .sponsors {
   text-align: center;
   padding: 3rem 1rem;
