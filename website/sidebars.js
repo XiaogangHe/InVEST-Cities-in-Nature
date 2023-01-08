@@ -11,7 +11,7 @@ module.exports = {
       type: 'category',
       collapsed: true,
       label: 'Flood Risk Mitigation',
-      items: ['Flood-Risk-Mitigation/data', 'Flood-Risk-Mitigation/about'],
+      items: ['Flood-Risk-Mitigation/about', 'Flood-Risk-Mitigation/data'],
     },
     {
       type: 'category',
