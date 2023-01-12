@@ -10,7 +10,7 @@ const Contributors = (props) => {
   const [repoWatchers, setRepoWatchers] = useState(0);
 
   useEffect(() => {
-    fetch(`https://api.github.com/repos/moja-global/community-website`).then(async (response) => {
+    fetch(`https://api.github.com/repos/XiaogangHe/InVEST-Cities-in-Nature`).then(async (response) => {
       const data = await response.json();
 
       if (data && data.stargazers_count) {
