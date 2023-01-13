@@ -147,7 +147,7 @@ module.exports = {
             {
               html: `
               <a href= 'https://github.com/XiaogangHe/InVEST-Cities-in-Nature' target="_blank">
-              <img class="socials" src="https://xiaoganghe.github.io/InVEST-Cities-in-Nature/img/github.png" alt="github icon" />
+              <img class="socials" src="https://xiaoganghe.github.io/InVEST-Cities-in-Nature/img/github.svg" alt="github icon" />
               </a>
               `,
             },
