@@ -23,14 +23,7 @@ Repository for the InVEST tutorial website, hosting resources for NUS Cities in 
 
 ## About
 
-[Cities in Nature](https://xiaoganghe.github.io/NUS-CDE2503/) is xxx.
-
-The website aims to xxx.
-
-The overall objective is to:
-
-- Introduce xxx.
-- Explain xxx.
+The website aims to help students learn how to use InVEST to design resilient cities.
 
 ### Credit
 
