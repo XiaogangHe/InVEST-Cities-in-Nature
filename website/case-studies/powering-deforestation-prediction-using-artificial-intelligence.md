@@ -50,7 +50,7 @@ xxx.
 
 > Results obtained for Myanmar by implementing Hierarchical Bayesian Framework.
 
-|![Diagram depicting the broad methodology followed in this project](../static/img/deforestation-algorithm-machine-learning-architecture.png) |
+|![Diagram depicting the broad methodology followed in this project](../static/img/district-outline.png) |
 |:--:|
 | Diagram depicting the broad methodology followed in this project |
 
