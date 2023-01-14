@@ -23,7 +23,7 @@ Repository for the InVEST tutorial website, hosting resources for NUS Cities in 
 
 ## About
 
-The website aims to help students learn how to use InVEST to design resilient cities.
+Learn how to use InVEST to design resilient cities. Materials prepared for NUS Cities in Nature studio projects. 
 
 ### Credit
 
