@@ -18,13 +18,55 @@ title: Model Details
 1. [How do modules work?](#how-do-modules-work)
 2. [Frequently asked questions](#frequently-asked-questions)
 
-### How do modules work?
+### How does the model work?
+Add a video here.
+
+or some texts.
+
+### How to run the model?
 
 - Step 1: Running the model using all materials listed in the part of data requirement.  
 ![figure titled `JSON about the InVEST urban flood risk mitigation model`](../../static/img/UC-JSON.png)  
 
 - Step 2: The results of urban cooling model are described as the following figures. According to these figures, we can find that there exist some regions whose WBGT and T_air are clearly higher than their surrounding regions especially in urban districts (refer to [the distribution of land use type](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/docs/Urban-Cooling/data/)). More insights into the energy savings should further take the distribution of buidings into consideration.
 
+## Model Output Layout
+
+InVEST Urban Cooling model outputs have the following layout:
+
+```
+.
+├── build/
+│   ├── appicon.png
+│   ├── darwin/
+│   └── windows/
+├── frontend/
+├── go.mod
+├── go.sum
+├── main.go
+└── wails.json
+```
+
+### Structure rundown
+
+- `/main.go` - The main application
+- `/frontend/` - Frontend project files
+- `/build/` - Project build directory
+- `/build/appicon.png` - The application icon
+- `/build/darwin/` - Mac specific project files
+- `/build/windows/` - Windows specific project files
+- `/wails.json` - The project configuration
+- `/go.mod` - Go module file
+- `/go.sum` - Go module checksum file
+
+The `frontend` directory has nothing specific to Wails and can be any frontend project of your choosing.
+
+The `build` directory is used during the build process. These files may be updated to customise your builds. If
+files are removed from the build directory, default versions will be regenerated.
+
+The default module name in `go.mod` is "changeme". You should change this to something more appropriate.
+
+### Another title
 |![the reults of wbgt in urban cooling model.](../../static/img/uc-wbgt.png) |
 |:--:|
 | Distribution of Wet Bulb Globe Temperature (WBGT). |
@@ -46,17 +88,17 @@ title: Model Details
 | Distribution of energy saving. |
 
 
-### Frequently Asked Questions
+
 1. What’s evapotranspiration and how to download this variable?  
    Evapotranspiration includes water evaporation into the atmosphere from the soil surface, evaporation from the capillary fringe of the groundwater table, and evaporation from water bodies on land ([source](https://www.usgs.gov/)). In this part, the evapotranspiration estimates provided by Simone are used for the period July 2012 to December 2016.  
    
 ## Glossary
 | Variable              | Abbreviation       | Meaning             | Type  |
-| :-------------------- | :------------------| :------------------ | :---: |
+| :-------------------- | :-----------------:| :------------------ | :---: |
 | Cooling capacity      | CC                 | An important factor for heat reduction                 | Output |
 | Albedo                | \                  | The proportion of solar radiation that is directly reflected by this LULC class. Required if the ‘factors’ option is selected for the Cooling Capacity Calculation Method                 | Output |
 | Wet Bulb Globe Temperature| WBGT           | WBGT can calculate the impacts of heat on work productivity| Output |
-| Air temperature values| T_air              | Average air temperatures                 | Output |  
+| Air temperature       | T_air              | Average air temperatures                 | Output |  
 | [Energy savings](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/urban_cooling_model.html#data-needs)| \              | the model uses a relationship between energy consumption and temperature (e.g. summarized by Santamouris et al. 2015) to calculate energy savings and associated costs for a building                 | Output |  
 
 To know more about InVEST, please watch the following video:
