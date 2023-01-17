@@ -80,14 +80,37 @@ html[data-theme='dark'] .sponsor_wrapper:hover {
 }
 
 blockquote {
-  background: #709ba4;
-  border-left: 7px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  color: white;
+    display: block;
+    background: #709ba4;
+    width: 90%;
+    max-width: 75rem;
+    position: relative;
+    padding: 0 1rem;
+    margin: 1rem auto 3rem;
+    border-left: 7px solid #ccc;
 }
-blockquote p {
-  display: inline-block;
+
+blockquote:before, blockquote:after {
+    content: "“";
+    font-size: 70px;
+    font-family: "Georgia", serif;
+    color: var(--ifm-link-color);
+    position: absolute;
+    left: -40px;
+    top: 5px;
+}
+
+blockquote:after {
+    content: "”";
+    right: -30px;
+    left: auto;
+}
+
+blockquote h4 {
+    position: absolute;
+    right: -30px;
+    padding-right: 1rem;
+    left: auto;
 }
 
 .sponsors {
