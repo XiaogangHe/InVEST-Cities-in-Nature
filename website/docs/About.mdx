@@ -24,7 +24,12 @@ export const Highlight = ({children, color}) => (
 
 <h3>TL;DR</h3>  
 
-<center><img src="https://xiaoganghe.github.io/InVEST-Cities-in-Nature/img/invest-logo.png" alt="invest logomark" width="150"/></center>
+<div class="text--center">
+  <img
+    src={require("@site/static/img/invest-logo.png").default}
+    width="25%"
+  />
+</div>
 
 [InVEST](https://naturalcapitalproject.stanford.edu/software/invest) is a family of tools for quantifying the values of natural capital in clear, credible, and practical ways. In promising a return (of societal benefits) on investments in nature, the scientific community needs to deliver knowledge and tools to quantify and forecast this return. InVEST enables decision-makers to quantify the importance of natural capital, to assess the tradeoffs associated with alternative choices, and to integrate conservation and human development.[^1] 
 
