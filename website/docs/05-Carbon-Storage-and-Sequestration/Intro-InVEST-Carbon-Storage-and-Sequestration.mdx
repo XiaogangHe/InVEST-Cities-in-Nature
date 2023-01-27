@@ -21,8 +21,56 @@ This page is incomplete and we would love your help. Edit this page and add anyt
 ## Contents
 
 1. [How do modules work?](#how-do-modules-work)
-2. [Frequently asked questions](#frequently-asked-questions)
+2. [Frequently asked questions](#frequently-asked-questions)  
 
+## Model Output Layout
+
+InVEST Carbon Storage and Sequestration Model outputs have the following layout:
+
+```
+.
+│  delta_cur_fut.tif
+│  InVEST-natcap.invest.carbon-log-2023-01-27--21_16_24.txt
+│  npv_fut.tif
+│  report.html
+│  tot_c_cur.tif
+│  tot_c_fut.tif
+│
+└─intermediate_outputs
+    │  c_above_cur.tif
+    │  c_above_fut.tif
+    │  c_below_cur.tif
+    │  c_below_fut.tif
+    │  c_dead_cur.tif
+    │  c_dead_fut.tif
+    │  c_soil_cur.tif
+    │  c_soil_fut.tif
+    │
+    └─_taskgraph_working_dir
+            taskgraph_data.db
+```  
+
+### Structure rundown
+
+- `/delta_cur_fut.tif` -    
+- `/InVEST-natcap.invest.carbon-log-2023-01-27--21_16_24.txt` - 
+- `/npv_fut.tif`   
+- `/report.html`  
+- `/tot_c_cur.tif  
+- `/tot_c_fut.tif  
+- `/intermediate_outputs/`   
+- `/intermediate_outputs/c_above_cur.tif`  
+- `/intermediate_outputs/c_above_fut.tif`   
+- `/intermediate_outputs/c_below_cur.tif` 
+- `/intermediate_outputs/c_below_fut.tif`   
+- `/intermediate_outputs/c_dead_cur.tif`  
+- `/intermediate_outputs/c_dead_fut.tif`   
+- `/intermediate_outputs/c_soil_cur.tif`  
+- `/intermediate_outputs/c_soil_fut.tif`
+- `/intermediate_outputs/_taskgraph_working_dir/` 
+- `/intermediate_outputs/_taskgraph_working_dir/taskgraph_data.db`  
+ 
+- Note: More detailed descriptions about the outputs of the InVEST Carbon Storage and Sequestration Model also can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/carbonstorage.html#data-needs).  
 ### How do modules work?
 
 - Step 1: Running the model using all materials listed in the part of Data requirement  
