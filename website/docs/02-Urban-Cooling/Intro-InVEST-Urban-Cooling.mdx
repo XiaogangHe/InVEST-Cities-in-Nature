@@ -36,35 +36,105 @@ InVEST Urban Cooling model outputs have the following layout:
 
 ```
 .
-├── build/
-│   ├── appicon.png
-│   ├── darwin/
-│   └── windows/
-├── frontend/
-├── go.mod
-├── go.sum
-├── main.go
-└── wails.json
+│  buildings_with_stats.dbf
+│  buildings_with_stats.prj
+│  buildings_with_stats.shp
+│  buildings_with_stats.shx
+│  hm.tif
+│  InVEST-natcap.invest.urban_cooling_model-log-2023-01-27--21_34_30.txt
+│  uhi_results.dbf
+│  uhi_results.prj
+│  uhi_results.shp
+│  uhi_results.shx
+│
+└─intermediate
+    │  albedo.tif
+    │  area_kernel.tif
+    │  cc.tif
+    │  cc_park.tif
+    │  cc_ref_aoi_stats.pickle
+    │  eti.tif
+    │  green_area.tif
+    │  green_area_sum.tif
+    │  heavy_loss_stats.pickle
+    │  heavy_work_loss_percent.tif
+    │  kc.tif
+    │  light_loss_stats.pickle
+    │  light_work_loss_percent.tif
+    │  lulc.tif
+    │  lulc.tif.aux.xml
+    │  ref_eto.tif
+    │  ref_eto.tif.aux.xml
+    │  reprojected_aoi.dbf
+    │  reprojected_aoi.prj
+    │  reprojected_aoi.shp
+    │  reprojected_aoi.shx
+    │  reprojected_buildings.dbf
+    │  reprojected_buildings.prj
+    │  reprojected_buildings.shp
+    │  reprojected_buildings.shx
+    │  shade.tif
+    │  T_air.tif
+    │  t_air_aoi_stats.pickle
+    │  T_air_nomix.tif
+    │  t_air_stats.pickle
+    │  wbgt.tif
+    │  wbgt_stats.pickle
+    │
+    └─_taskgraph_working_dir
+            taskgraph_data.db
 ```
 
 ### Structure rundown
 
-- `/main.go` - The main application
-- `/frontend/` - Frontend project files
-- `/build/` - Project build directory
-- `/build/appicon.png` - The application icon
-- `/build/darwin/` - Mac specific project files
-- `/build/windows/` - Windows specific project files
-- `/wails.json` - The project configuration
-- `/go.mod` - Go module file
-- `/go.sum` - Go module checksum file
+- `/buildings_with_stats.dbf` - The main application
+- `/buildings_with_stats.prj` - 
+- `/buildings_with_stats.shp` - 
+- `/buildings_with_stats.shx` -  
+- `/buildings_with_stats.prj` - 
+- `/hm.tif` - 
+- `/InVEST-natcap.invest.urban_cooling_model-log-2023-01-27--21_34_30.txt` -
+- `/uhi_results.dbf` - 
+- `/uhi_results.prj` - 
+- `/uhi_results.shp` -
+- `/uhi_results.shx` - 
+- `/intermediate/` - 
+- `/intermediate/albedo.tif` -  
+- `/intermediate/area_kernel.tif` - 
+- `/intermediate/cc.tif` - 
+- `/intermediate/cc_park.tif` - 
+- `/intermediate/cc_ref_aoi_stats.pickle` - 
+- `/intermediate/eti.tif` - 
+- `/intermediate/green_area.tif` - 
+- `/intermediate/green_area_sum.tif` - 
+- `/intermediate/heavy_loss_stats.pickle` -  
+- `/intermediate/heavy_work_loss_percent.tif` - 
+- `/intermediate/kc.tif` - 
+- `/intermediate/light_loss_stats.pickle` - 
+- `/intermediate/light_work_loss_percent.tif` - 
+- `/intermediate/lulc.tif` - 
+- `/intermediate/lulc.tif.aux.xml` - 
+- `/intermediate/ref_eto.tif` - 
+- `/intermediate/ref_eto.tif.aux.xml` -  
+- `/intermediate/reprojected_aoi.dbf` - 
+- `/intermediate/reprojected_aoi.prj` - 
+- `/intermediate/reprojected_aoi.shp` - 
+- `/intermediate/reprojected_aoi.shx` - 
+- `/intermediate/reprojected_buildings.dbf` - 
+- `/intermediate/reprojected_buildings.prj` - 
+- `/intermediate/reprojected_buildings.shp` - 
+- `/intermediate/reprojected_buildings.shx` -  
+- `/intermediate/shade.tif` -  
+- `/intermediate/T_air.tif` -
+- `/intermediate/t_air_aoi_stats.pickle` -  
+- `/intermediate/T_air_nomix.tif` -
+- `/intermediate/t_air_stats.pickle` -  
+- `/intermediate/wbgt.tif` -
+- `/intermediate/wbgt_stats.pickle` -
+- `/intermediate/_taskgraph_working_dir/` - 
+- `/intermediate/_taskgraph_working_dir/taskgraph_data.db` -  
 
-The `frontend` directory has nothing specific to Wails and can be any frontend project of your choosing.
-
-The `build` directory is used during the build process. These files may be updated to customise your builds. If
-files are removed from the build directory, default versions will be regenerated.
-
-The default module name in `go.mod` is "changeme". You should change this to something more appropriate.
+- Note: More detailed descriptions about the outputs of the InVEST Urban Cooling Model also can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/urban_cooling_model.html#data-needs).
 
 ### Another title
 |![the reults of wbgt in urban cooling model.](../../static/img/uc-wbgt.png) |
