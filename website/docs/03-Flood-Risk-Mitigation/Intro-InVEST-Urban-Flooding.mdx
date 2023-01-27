@@ -26,32 +26,59 @@ This page is incomplete and we would love your help. Edit this page and add anyt
 3. 
 ## Model Output Layout
 
-InVEST Urban Cooling model outputs have the following layout:
+InVEST Urban Flood Risk Mitigation Model outputs have the following layout:
 
 ```
 .
-├── build/
-│   ├── appicon.png
-│   ├── darwin/
-│   └── windows/
-├── frontend/
-├── go.mod
-├── go.sum
-├── main.go
-└── wails.json
-```
+│  flood_risk_service.dbf
+│  flood_risk_service.prj
+│  flood_risk_service.shp
+│  flood_risk_service.shx
+│  InVEST-natcap.invest.urban_flood_risk_mitigation-log-2023-01-03--19_16_18.txt
+│  precipitation=30.txt
+│  Q_mm.tif
+│  Runoff_retention.tif
+│  Runoff_retention_m3.tif
+│
+├─intermediate_files
+│      Q_m3.tif
+│      reprojected_aoi.gpkg
+│      structures_reprojected.gpkg
+│
+└─temp_working_dir_not_for_humans
+        aligned_lulc.tif
+        aligned_lulc.tif.aux.xml
+        aligned_soils_hydrological_group.tif
+        aligned_soils_hydrological_group.tif.aux.xml
+        cn_raster.tif
+        s_max.tif
+        taskgraph_data.db
+```  
 
 ### Structure rundown
 
-- `/main.go` - The main application
-- `/frontend/` - Frontend project files
-- `/build/` - Project build directory
-- `/build/appicon.png` - The application icon
-- `/build/darwin/` - Mac specific project files
-- `/build/windows/` - Windows specific project files
-- `/wails.json` - The project configuration
-- `/go.mod` - Go module file
-- `/go.sum` - Go module checksum file
+- `/flood_risk_service.dbf` - The main application  
+- `/flood_risk_service.prj` - The main application  
+- `/flood_risk_service.shp` - The main application  
+- `/flood_risk_service.shx` - The main application
+- `/InVEST-natcap.invest.urban_flood_risk_mitigation-log-2023-01-03--19_16_18.txt` - Frontend project files  
+- `/precipitation=30.txt` - Frontend project files  
+- `/Q_mm.tif` - Frontend project files  
+- `/Runoff_retention.tif` - Frontend project files  
+- `/Runoff_retention_m3.tif` - Frontend project files
+- `/intermediate_files/` - Project build directory
+- `/intermediate_files/Q_m3.tif` - The application icon
+- `/intermediate_files/reprojected_aoi.gpkg` - Mac specific project files
+- `/intermediate_files/structures_reprojected.gpkg` - Windows specific project files
+- `/temp_working_dir_not_for_humans/` - Project build directory
+- `/temp_working_dir_not_for_humans/aligned_lulc.tif` - The application icon
+- `/temp_working_dir_not_for_humans/aligned_lulc.tif.aux.xml` - Mac specific project files
+- `/temp_working_dir_not_for_humans/aligned_soils_hydrological_group.tif` - Windows specific project files
+- `/temp_working_dir_not_for_humans/aligned_soils_hydrological_group.tif.aux.xml` - The application icon
+- `/temp_working_dir_not_for_humans/cn_raster.tif` - Mac specific project files
+- `/temp_working_dir_not_for_humans/s_max.tif` - Windows specific project files
+- `/temp_working_dir_not_for_humans/taskgraph_data.db` - Windows specific project files  
+
 
 The `frontend` directory has nothing specific to Wails and can be any frontend project of your choosing.
 
