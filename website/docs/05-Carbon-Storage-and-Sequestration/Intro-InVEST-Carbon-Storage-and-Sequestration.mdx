@@ -52,23 +52,23 @@ InVEST Carbon Storage and Sequestration Model outputs have the following layout:
 
 ### Structure rundown
 
-- `/delta_cur_fut.tif` -    
-- `/InVEST-natcap.invest.carbon-log-2023-01-27--21_16_24.txt` - 
-- `/npv_fut.tif`   
-- `/report.html`  
-- `/tot_c_cur.tif  
-- `/tot_c_fut.tif  
+- `/delta_cur_fut.tif` - Rasters showing the difference in carbon stored between the future landscape and the current landscape   
+- `/InVEST-natcap.invest.carbon-log-2023-01-27--21_16_24.txt` - Each time the model is run, a text (.txt) file will be created in the Workspace. The file will list the parameter values and output messages for that run and will be named according to the service, the date and time  
+- `/npv_fut.tif` - Rasters showing the economic value of carbon sequestered between the current and the future landscape dates. The units are in currency per pixel  
+- `/report.html` - This file presents a summary of all data computed by the model. It also includes descriptions of all other output files produced by the model, so it is a good place to begin exploring and understanding model results. Because this is an HTML file, it can be opened with any web browser 
+- `/tot_c_cur.tif - Rasters showing the amount of carbon stored in each pixel for the current scenarios. It is a sum of all of the carbon pools provided by the biophysical table. Units are metric tons per pixel 
+- `/tot_c_fut.tif - Rasters showing the amount of carbon stored in each pixel for the future scenarios. It is a sum of all of the carbon pools provided by the biophysical table. Units are metric tons per pixel  
 - `/intermediate_outputs/`   
-- `/intermediate_outputs/c_above_cur.tif`  
-- `/intermediate_outputs/c_above_fut.tif`   
-- `/intermediate_outputs/c_below_cur.tif` 
-- `/intermediate_outputs/c_below_fut.tif`   
-- `/intermediate_outputs/c_dead_cur.tif`  
-- `/intermediate_outputs/c_dead_fut.tif`   
-- `/intermediate_outputs/c_soil_cur.tif`  
-- `/intermediate_outputs/c_soil_fut.tif`
+- `/intermediate_outputs/c_above_cur.tif` - Raster of aboveground carbon values, mapped from the Carbon Pools table to the current landscape. Units are metric tons per pixel  
+- `/intermediate_outputs/c_above_fut.tif` - Raster of aboveground carbon values, mapped from the Carbon Pools table to the future landscape. Units are metric tons per pixel   
+- `/intermediate_outputs/c_below_cur.tif` - Raster of belowground carbon values, mapped from the Carbon Pools table to the current landscape. Units are metric tons per pixel 
+- `/intermediate_outputs/c_below_fut.tif` - Raster of belowground carbon values, mapped from the Carbon Pools table to the future landscape. Units are metric tons per pixel  
+- `/intermediate_outputs/c_dead_cur.tif` - Raster of dead carbon values, mapped from the Carbon Pools table to the current landscape. Units are metric tons per pixel 
+- `/intermediate_outputs/c_dead_fut.tif` - Raster of dead carbon values, mapped from the Carbon Pools table to the future landscape. Units are metric tons per pixel   
+- `/intermediate_outputs/c_soil_cur.tif` - Raster of soil carbon values, mapped from the Carbon Pools table to the current landscape. Units are metric tons per pixel 
+- `/intermediate_outputs/c_soil_fut.tif` - Raster of soil carbon values, mapped from the Carbon Pools table to the future landscape. Units are metric tons per pixel 
 - `/intermediate_outputs/_taskgraph_working_dir/` 
-- `/intermediate_outputs/_taskgraph_working_dir/taskgraph_data.db`  
+- `/intermediate_outputs/_taskgraph_working_dir/taskgraph_data.db` - This directory stores metadata used internally to enable avoided re-computation. No model results are stored here  
  
 - Note: More detailed descriptions about the outputs of the InVEST Carbon Storage and Sequestration Model also can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/carbonstorage.html#data-needs).  
 ### How do modules work?
