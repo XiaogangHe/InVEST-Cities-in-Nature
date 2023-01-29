@@ -83,87 +83,41 @@ InVEST Urban Cooling model outputs have the following layout:
 
 ### Structure rundown
 
-| Folder                                        | File name(s)                                | Explanation                              |
-| :-------------------------------------------- | :------------------------------------------:| :--------------------------------------- |
-| ./                                            | `buildings_with_stats.*(dbf,prj,shp,shx)`   | File with results in the attribute table |
-| ./                                            | `hm.tif`                                    | Calculated heat mitigation index (HMI) |
+| Folder                                        | File name(s)                                | Explanation                               |
+| :-------------------------------------------- | :------------------------------------------:| :---------------------------------------- |
+| ./                                            | `buildings_with_stats.*(dbf,prj,shp,shx)`   | File with results in the attribute table  |
+| ./                                            | `hm.tif`                                    | Calculated heat mitigation index (HMI)    |
 | ./                                            | `InVEST-natcap.invest.urban_cooling_model-log-2023-01-27--21_34_30.txt`| The file lists the parameter values and output messages for that run and will be named according to the service, the date and time |
 | ./                                            |  `uhi_results.*(dbf,prj,shp,shx)`           | A copy of the input vector “Building Footprints” with the following additional fields including energy savings value and average temperature value in building|
-| ./intermediate/                               |  `albedo.tif`                                           |     |
-| ./intermediate/                               |  `area_kernel.tif`                                           |     |
-| ./intermediate/                               |  `cc.tif`                                          |     |
-| ./intermediate/                               |  `cc_park.tif`                                          |     |
-| ./intermediate/                               |  `cc_ref_aoi_stats.pickle`                                          |     |
-| ./intermediate/                               |  `eti.tif`                                          |     |
-| ./intermediate/                               |  `green_area.tif`                                         |     |
-| ./intermediate/                               |  `green_area_sum.tif`                                          |     |
-| ./intermediate/                               |  `heavy_loss_stats.pickle`                                          |     |
-| ./intermediate/                               |  `heavy_work_loss_percent.tif`                                          |     |
-| ./intermediate/                               |  `albedo.tif`                                |     |
-| ./intermediate/                               |  `lulc.tif`                                       |     |
-| ./intermediate/                               |  `lulc.tif.aux.xml`                                |     |
-| ./intermediate/                               |  `ref_eto.tif`                                       |     |
-| ./intermediate/                               |  `ref_eto.tif.aux.xml`                                |     |
-| ./intermediate/                               |  `reprojected_aoi.*(dbf,prj,shp,shx)` |The user-defined Area of Interest, reprojected to the Spatial Reference of the land use/land cover | 
-| ./intermediate/                               |  `reprojected_buildings.*(dbf,prj,shp,shx)`  | The user-defined buildings vector, reprojected to the Spatial Reference of the land use/land cover |
-| ./intermediate/                               |  `shade.tif`                                       |     |
-| ./intermediate/                               |  `T_air.tif`                                | Raster of estimated air temperature values |
-| ./intermediate/                               |  `t_air_aoi_stats.pickle`                                       |     |
-| ./intermediate/                               |  `T_air_nomix.tif`                                | Raster of estimated air temperature values prior to air mixing (i.e. before applying the moving average algorithm) |
-| ./intermediate/                               |  `t_air_stats.pickle`                                       |     |  
-| ./intermediate/                               |  `wbgt.tif`                                       | Raster of the calculated Wet Bulb Globe Temperature (WBGT) |  
-| ./intermediate/                               |  `wbgt_stats.pickle`                                       |     |  
-| ./intermediate/_taskgraph_working_dir/        |  `taskgraph_data.db`                                       |     |  
+| ./intermediate/                               |  `albedo.tif`                               |                                           |
+| ./intermediate/                               |  `area_kernel.tif`                          |                                           |
+| ./intermediate/                               |  `cc.tif`                                   |                                           |
+| ./intermediate/                               |  `cc_park.tif`                              |                                           |
+| ./intermediate/                               |  `cc_ref_aoi_stats.pickle`                  |                                           |
+| ./intermediate/                               |  `eti.tif`                                  |                                           |
+| ./intermediate/                               |  `green_area.tif`                           |                                           |
+| ./intermediate/                               |  `green_area_sum.tif`                       |                                           |
+| ./intermediate/                               |  `heavy_loss_stats.pickle`                  |                                           |
+| ./intermediate/                               |  `heavy_work_loss_percent.tif`              |                                           |
+| ./intermediate/                               |  `albedo.tif`                               |                                           |
+| ./intermediate/                               |  `lulc.tif`                                 |                                           |
+| ./intermediate/                               |  `lulc.tif.aux.xml`                         |                                           |
+| ./intermediate/                               |  `ref_eto.tif`                              |                                           |
+| ./intermediate/                               |  `ref_eto.tif.aux.xml`                      |                                           |
+| ./intermediate/                               |  `reprojected_aoi.*(dbf,prj,shp,shx)`       |The user-defined Area of Interest, reprojected to the Spatial Reference of the land use/land cover | 
+| ./intermediate/                               |  `reprojected_buildings.*(dbf,prj,shp,shx)` | The user-defined buildings vector, reprojected to the Spatial Reference of the land use/land cover |
+| ./intermediate/                               |  `shade.tif`                                |                                           |
+| ./intermediate/                               |  `T_air.tif`                                | Raster of estimated air temperature values|
+| ./intermediate/                               |  `t_air_aoi_stats.pickle`                   |                                           |
+| ./intermediate/                               |  `T_air_nomix.tif`                          | Raster of estimated air temperature values prior to air mixing (i.e. before applying the moving average algorithm) |
+| ./intermediate/                               |  `t_air_stats.pickle`                       |                                           | 
+| ./intermediate/                               |  `wbgt.tif`                                 | Raster of the calculated Wet Bulb Globe Temperature (WBGT) |  
+| ./intermediate/                               |  `wbgt_stats.pickle`                        |                                           | 
+| ./intermediate/_taskgraph_working_dir/        |  `taskgraph_data.db`                        |                                           | 
 
 :::note
 Files in xxx are xxx. (explain the `/intermediate` folder)
 :::
-
-- `/buildings_with_stats.dbf` - File with results in the attribute table
-- `/buildings_with_stats.prj` - File with results in the attribute table
-- `/buildings_with_stats.shp` - File with results in the attribute table
-- `/buildings_with_stats.shx` - File with results in the attribute table 
-- `/hm.tif` - File with the calculated heat mitigation index (HMI)
-- `/InVEST-natcap.invest.urban_cooling_model-log-2023-01-27--21_34_30.txt` - Each time the model is run, a text (.txt) file will be created in the Workspace. The file will list the parameter values and output messages for that run and will be named according to the service, the date and time
-- `/uhi_results.dbf` - A copy of the input vector “Building Footprints” with the following additional fields including energy savings value and average temperature value in building
-- `/uhi_results.prj` - A copy of the input vector “Building Footprints” with the following additional fields including energy savings value and average temperature value in building
-- `/uhi_results.shp` - A copy of the input vector “Building Footprints” with the following additional fields including energy savings value and average temperature value in building
-- `/uhi_results.shx` - A copy of the input vector “Building Footprints” with the following additional fields including energy savings value and average temperature value in building
-- `/intermediate/` - 
-- `/intermediate/albedo.tif` -  
-- `/intermediate/area_kernel.tif` - 
-- `/intermediate/cc.tif` - 
-- `/intermediate/cc_park.tif` - 
-- `/intermediate/cc_ref_aoi_stats.pickle` - 
-- `/intermediate/eti.tif` - Raster of values of actual evapotranspiration 
-- `/intermediate/green_area.tif` - 
-- `/intermediate/green_area_sum.tif` - 
-- `/intermediate/heavy_loss_stats.pickle` -  
-- `/intermediate/heavy_work_loss_percent.tif` - 
-- `/intermediate/kc.tif` - 
-- `/intermediate/light_loss_stats.pickle` - 
-- `/intermediate/light_work_loss_percent.tif` - 
-- `/intermediate/lulc.tif` - 
-- `/intermediate/lulc.tif.aux.xml` - 
-- `/intermediate/ref_eto.tif` - 
-- `/intermediate/ref_eto.tif.aux.xml` -  
-- `/intermediate/reprojected_aoi.dbf` - The user-defined Area of Interest, reprojected to the Spatial Reference of the land use/land cover
-- `/intermediate/reprojected_aoi.prj` - The user-defined Area of Interest, reprojected to the Spatial Reference of the land use/land cover
-- `/intermediate/reprojected_aoi.shp` - The user-defined Area of Interest, reprojected to the Spatial Reference of the land use/land cover
-- `/intermediate/reprojected_aoi.shx` - The user-defined Area of Interest, reprojected to the Spatial Reference of the land use/land cover
-- `/intermediate/reprojected_buildings.dbf` - The user-defined buildings vector, reprojected to the Spatial Reference of the LULC
-- `/intermediate/reprojected_buildings.prj` - The user-defined buildings vector, reprojected to the Spatial Reference of the LULC
-- `/intermediate/reprojected_buildings.shp` - The user-defined buildings vector, reprojected to the Spatial Reference of the LULC
-- `/intermediate/reprojected_buildings.shx` - The user-defined buildings vector, reprojected to the Spatial Reference of the LULC 
-- `/intermediate/shade.tif` -  
-- `/intermediate/T_air.tif` - Raster of estimated air temperature values
-- `/intermediate/t_air_aoi_stats.pickle` -  
-- `/intermediate/T_air_nomix.tif` - Raster of estimated air temperature values prior to air mixing (i.e. before applying the moving average algorithm)
-- `/intermediate/t_air_stats.pickle` -  
-- `/intermediate/wbgt.tif` - Raster of the calculated Wet Bulb Globe Temperature (WBGT)
-- `/intermediate/wbgt_stats.pickle` -
-- `/intermediate/_taskgraph_working_dir/` - 
-- `/intermediate/_taskgraph_working_dir/taskgraph_data.db` -  
 
 :::note
 More detailed descriptions about the outputs of the InVEST Urban Cooling Model also can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/urban_cooling_model.html#data-needs).
