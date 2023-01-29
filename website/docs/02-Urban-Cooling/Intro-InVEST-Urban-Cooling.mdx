@@ -5,37 +5,33 @@ title: Model Details
 
 ![Cover Image for `An introduction to InVEST urban cooling model`](../../static/img/banner-image-invest-cooling.png)
 
-## Introduction
+## Summary
 
-- The InVEST Urban Cooling Model calculates an index of heat mitigation based on evapotranspiration, shade and albedo, as well as distance from cooling islands (e.g. parks). The index is used to estimate a temperature reduction by vegetation [(source)](https://invest-userguide.readthedocs.io/en/latest/urban_cooling_model.html).
+> Urban heat mitigation (HM) is a priority for many cities that have undergone heat waves in recent years. Vegetation can help reduce the urban heat island (UHI) effect by providing shade, modifying thermal properties of the urban fabric, and increasing cooling through evapotranspiration. This has consequences for the health and wellbeing of citizens through reduced mortality and morbidity, increased comfort and productivity, and the reduced need for air conditioning (A/C). <br /> <p align="right">from [InVEST Documentation](https://invest-userguide.readthedocs.io/en/latest/urban_cooling_model.html)</p>
 
-## Prerequisites
+> The InVEST urban cooling model calculates an index of heat mitigation based on shade, evapotranspiration, and albedo, as well as distance from cooling islands (e.g. parks). The index is used to estimate a temperature reduction by vegetation. Finally, the model estimates the value of the heat mitigation service using two (optional) valuation methods: energy consumption and work productivity. <br /> <p align="right">from [InVEST Documentation](https://invest-userguide.readthedocs.io/en/latest/urban_cooling_model.html)</p>
 
-- Before running the module of Urban Cooling Model, you need to collect all necessary data, which has been listed in the [part of Data Requirement](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/docs/Urban-Cooling/data/).
+## Data needs
 
-## Contents
+Before running the InVEST Urban Cooling Model, you need to download all necessary data [here](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/docs/Urban-Cooling/data/).
 
-1. [How do modules work?](#how-do-modules-work)
-2. [Frequently asked questions](#frequently-asked-questions)
-
-### How does the model work?
+## How does the model work?
 Add a video here.
 
 or some texts.
 
-### How to run the model?
-
-- Step 1: Running the model using all materials listed in the part of data requirement.  
+## How to run the model?
 ![figure titled `JSON about the InVEST urban flood risk mitigation model`](../../static/img/UC-JSON.png)  
 
+- Step 1: Running the model using all materials listed in the part of data requirement.  
 - Step 2: The results of urban cooling model are described as the following figures. According to these figures, we can find that there exist some regions whose WBGT and T_air are clearly higher than their surrounding regions especially in urban districts (refer to [the distribution of land use type](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/docs/Urban-Cooling/data/)). More insights into the energy savings should further take the distribution of buidings into consideration.
 
-## Model Output Layout
+## Model Output 
 
+### Layout
 InVEST Urban Cooling model outputs have the following layout:
 
 ```
-.
 │  buildings_with_stats.dbf
 │  buildings_with_stats.prj
 │  buildings_with_stats.shp
@@ -87,6 +83,19 @@ InVEST Urban Cooling model outputs have the following layout:
 
 ### Structure rundown
 
+| Folder                | File name(s)                                | Explanation    |
+| :-------------------- | :------------------------------------------:| :------------- |
+| ./                    | `buildings_with_stats.*(dbf,prj,shp,shx)`   | xxx |
+| ./                    | `hm.tif`                                    | calculated heat mitigation index (HMI) |
+| ./                    | `xxx`                                       | xxx |
+|                       |                                             |     |
+| /intermediate         | `albedo.tif`                                | xxx |
+| /intermediate         | `xxx`                                       | xxx |
+
+:::note
+Files in xxx are xxx. (explain the `/intermediate` folder)
+:::
+
 - `/buildings_with_stats.dbf` - File with results in the attribute table
 - `/buildings_with_stats.prj` - File with results in the attribute table
 - `/buildings_with_stats.shp` - File with results in the attribute table
@@ -133,30 +142,19 @@ InVEST Urban Cooling model outputs have the following layout:
 - `/intermediate/_taskgraph_working_dir/` - 
 - `/intermediate/_taskgraph_working_dir/taskgraph_data.db` -  
 
-- Note: More detailed descriptions about the outputs of the InVEST Urban Cooling Model also can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/urban_cooling_model.html#data-needs).
+:::note
+More detailed descriptions about the outputs of the InVEST Urban Cooling Model also can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/urban_cooling_model.html#data-needs).
+:::
 
-### Another title
-|![the reults of wbgt in urban cooling model.](../../static/img/uc-wbgt.png) |
-|:--:|
-| Distribution of Wet Bulb Globe Temperature (WBGT). |
+### Results visualization
 
-|![the reults of air temperature in urban cooling model.](../../static/img/uc-airtemperature.png) |
-|:--:|
-| Distribution of air temperature (T_air). |
-
-|![the reults of albedo in urban cooling model.](../../static/img/uc-albedo.png) |
-|:--:|
-| Distribution of albedo. |
-
-|![the reults of coolingcapacity in urban cooling model.](../../static/img/uc-coolingcapacity.png) |
-|:--:|
-| Distribution of cooling capacity (CC). |
-
-|![the reults of energysaving in urban cooling model.](../../static/img/uc-energysavings.png) |
-|:--:|
-| Distribution of energy savings. |
-
-
+| <!-- -->                                            | <!-- -->            |            
+| :-------------------------------------------------: | :-----------------: |
+| Distribution of Wet Bulb Globe Temperature (WBGT)   |<img src={require("@site/static/img/uc-wbgt.png").default} width="80%"/> |
+| Distribution of air temperature (T_air)             |<img src={require("@site/static/img/uc-airtemperature.png").default} width="80%"/> |
+| Distribution of albedo                              |<img src={require("@site/static/img/uc-albedo.png").default} width="80%"/> |
+| Distribution of cooling capacity                    |<img src={require("@site/static/img/uc-coolingcapacity.png").default} width="80%"/> |
+| Distribution of energy savings                      |<img src={require("@site/static/img/uc-energysavings.png").default} width="80%"/> |
 
 ## Glossary
 | Variable              | Abbreviation       | Meaning             | Type  |
@@ -167,12 +165,10 @@ InVEST Urban Cooling model outputs have the following layout:
 | Air temperature       | T_air              | Average air temperatures                 | Output |  
 | [Energy savings](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/urban_cooling_model.html#data-needs)| \              | the model uses a relationship between energy consumption and temperature (e.g. summarized by Santamouris et al. 2015) to calculate energy savings and associated costs for a building                 | Output |  
 
-## Related references
-- Hamel P, Guerry AD, Polasky S, Han B, Douglass JA, Hamann M, Janke B, Kuiper JJ, Levrel H, Liu H, Lonsdorf E. Mapping the benefits of nature in cities with the InVEST software. Npj Urban Sustainability. 2021 Jun 21;1(1):1-9. https://www.nature.com/articles/s42949-021-00027-9.  
+## Model Applications 
+- Hamel P, Guerry AD, Polasky S, Han B, Douglass JA, Hamann M, Janke B, Kuiper JJ, Levrel H, Liu H, Lonsdorf E. [Mapping the benefits of nature in cities with the InVEST software](https://www.nature.com/articles/s42949-021-00027-9). Npj Urban Sustainability. 2021 Jun 21;1(1):1-9.  
 - Zawadzka JE, Harris JA, Corstanje R. Assessment of heat mitigation capacity of urban greenspaces with the use of InVEST urban cooling model, verified with day-time land surface temperature data. Landscape and Urban Planning. 2021 Oct 1;214:104163. https://doi.org/10.1016/j.landurbplan.2021.104163.  
 - Veerkamp CJ, Loreti M, Benavidez R, Jackson B, Schipper AM. Comparing three spatial modeling tools for assessing urban ecosystem services. Ecosystem Services. 2023 Feb 1;59:101500. https://doi.org/10.1016/j.ecoser.2022.101500. 
-
-
 
 To know more about InVEST, please watch the following video:
 
