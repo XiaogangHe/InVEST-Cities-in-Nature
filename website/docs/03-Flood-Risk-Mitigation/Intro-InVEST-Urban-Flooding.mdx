@@ -56,6 +56,37 @@ InVEST Urban Flood Risk Mitigation Model outputs have the following layout:
 ```  
 
 ### Structure rundown
+| Folder                                        | File name(s)                                | Explanation                               |
+| :-------------------------------------------- | :------------------------------------------:| :---------------------------------------- |
+| ./                                            | `buildings_with_stats.*(dbf,prj,shp,shx)`   | File with results in the attribute table  |
+| ./                                            | `hm.tif`                                    | Calculated heat mitigation index (HMI)    |
+| ./                                            | `InVEST-natcap.invest.urban_cooling_model-log-2023-01-27--21_34_30.txt`| The file lists the parameter values and output messages for that run and will be named according to the service, the date and time |
+| ./                                            |  `uhi_results.*(dbf,prj,shp,shx)`           | A copy of the input vector “Building Footprints” with the following additional fields including energy savings value and average temperature value in building|
+| ./intermediate/                               |  `albedo.tif`                               |                                           |
+| ./intermediate/                               |  `area_kernel.tif`                          |                                           |
+| ./intermediate/                               |  `cc.tif`                                   |                                           |
+| ./intermediate/                               |  `cc_park.tif`                              |                                           |
+| ./intermediate/                               |  `cc_ref_aoi_stats.pickle`                  |                                           |
+| ./intermediate/                               |  `eti.tif`                                  |                                           |
+| ./intermediate/                               |  `green_area.tif`                           |                                           |
+| ./intermediate/                               |  `green_area_sum.tif`                       |                                           |
+| ./intermediate/                               |  `heavy_loss_stats.pickle`                  |                                           |
+| ./intermediate/                               |  `heavy_work_loss_percent.tif`              |                                           |
+| ./intermediate/                               |  `albedo.tif`                               |                                           |
+| ./intermediate/                               |  `lulc.tif`                                 |                                           |
+| ./intermediate/                               |  `lulc.tif.aux.xml`                         |                                           |
+| ./intermediate/                               |  `ref_eto.tif`                              |                                           |
+| ./intermediate/                               |  `ref_eto.tif.aux.xml`                      |                                           |
+| ./intermediate/                               |  `reprojected_aoi.*(dbf,prj,shp,shx)`       |The user-defined Area of Interest, reprojected to the Spatial Reference of the land use/land cover | 
+| ./intermediate/                               |  `reprojected_buildings.*(dbf,prj,shp,shx)` | The user-defined buildings vector, reprojected to the Spatial Reference of the land use/land cover |
+| ./intermediate/                               |  `shade.tif`                                |                                           |
+| ./intermediate/                               |  `T_air.tif`                                | Raster of estimated air temperature values|
+| ./intermediate/                               |  `t_air_aoi_stats.pickle`                   |                                           |
+| ./intermediate/                               |  `T_air_nomix.tif`                          | Raster of estimated air temperature values prior to air mixing (i.e. before applying the moving average algorithm) |
+| ./intermediate/                               |  `t_air_stats.pickle`                       |                                           | 
+| ./intermediate/                               |  `wbgt.tif`                                 | Raster of the calculated Wet Bulb Globe Temperature (WBGT) |  
+| ./intermediate/                               |  `wbgt_stats.pickle`                        |                                           | 
+| ./intermediate/_taskgraph_working_dir/        |  `taskgraph_data.db`                        |                                           |  
 
 - `/flood_risk_service.dbf` - File with results in the attribute table   
 - `/flood_risk_service.prj` - File with results in the attribute table   
@@ -79,66 +110,9 @@ InVEST Urban Flood Risk Mitigation Model outputs have the following layout:
 - `/temp_working_dir_not_for_humans/s_max.tif` 
 - `/temp_working_dir_not_for_humans/taskgraph_data.db`
 
-- Note: More detailed descriptions about the outputs of the InVEST Urban Flood Risk Mitigation Model also can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/urban_flood_mitigation.html#data-needs).  
-
-### How do modules work?
-
-- Step 1: Running the model using all materials listed in the part of Data requirement  
-![figure titled `JSON about the InVEST urban flood risk mitigation model`](../../static/img/UFRM-JSON.png)  
-
-- Step 2: The related reults when rainfall=30 mm at present land use are presneted by the following figures. According to these figures, we can find that low runoff retention values mainly exist in the urban districts (refer to [land use at present](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/docs/Flood-Risk-Mitigation/data/)). Menawhile, relatively high Q values are observed in the urban districts.
-
-|![the reults of rainfall=30 mm.](../../static/img/ufrm-30-Q.png) |
-|:--:|
-| Distribution of runoff values (Q) values when rainfall=30 mm. |
-
-|![the reults of rainfall=30 mm.](../../static/img/ufrm-30-runoff-retention.png) |
-|:--:|
-| Distribution of runoff rention when rainfall=30 mm. |
-
-|![the reults of rainfall=30 mm.](../../static/img/ufrm-30-Runoff-retention-values.png) |
-|:--:|
-| Distribution of runoff rention values when rainfall=30 mm. |
-
-|![the reults of rainfall=30 mm.](../../static/img/ufrm-30-service.png) |
-|:--:|
-| Distribution of service values when rainfall=30 mm. |
-
-- Step 3: The related reults when rainfall=100 mm at present land use are presneted by the following figures. We can find that Q values shown in these figures are clearly higher than that observed when rainfall=30 mm at present land use, indicating that higher rainfall may increase the occurency risk of high Q values.
-
-|![the reults of rainfall=100 mm.](../../static/img/ufrm-100-Q.png) |
-|:--:|
-| Distribution of runoff values (Q) values when rainfall=100 mm. |
-
-|![the reults of rainfall=100 mm.](../../static/img/ufrm-100-runoff-retention.png) |
-|:--:|
-| Distribution of runoff rention when rainfall=100 mm. |
-
-|![the reults of rainfall=100 mm.](../../static/img/ufrm-100-Runoff-retention-values.png) |
-|:--:|
-| Distribution of runoff rention values when rainfall=100 mm. |
-
-|![the reults of rainfall=100 mm.](../../static/img/ufrm-100-service.png) |
-|:--:|
-| Distribution of service values when rainfall=100 mm. |
-
-- Step 4: The related reults when rainfall=100 mm after land use change are presneted by the following figures. We can find that obvious changes have occured in this scenario regarding to the distribution of Q and runoff retention values after comparing with the previous scenarios, which indicates that land use can play a critical role in estimating the urban flood risk mitigation (refer to [land use after change](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/docs/Flood-Risk-Mitigation/data/)). 
-
-|![the reults of rainfall=100 mm.](../../static/img/ufrm-100-Q_lulc.png) |
-|:--:|
-| Distribution of runoff values (Q) values when rainfall=100 mm and land use change. |
-
-|![the reults of rainfall=100 mm.](../../static/img/ufrm-100-runoff-retention_lulc.png) |
-|:--:|
-| Distribution of runoff rention when rainfall=100 mm and land use change. |
-
-|![the reults of rainfall=100 mm.](../../static/img/ufrm-100-Runoff-retention-values_lulc.png) |
-|:--:|
-| Distribution of runoff rention values when rainfall=100 mm and land use change. |
-
-|![the reults of rainfall=100 mm.](../../static/img/ufrm-100-service_lulc.png) |
-|:--:|
-| Distribution of service values when rainfall=100 mm and land use change. |
+:::note
+More detailed descriptions about the outputs of the InVEST Urban Cooling Model also can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/urban_flood_mitigation.html#data-needs).
+:::
 
 ### Results visualization
 
