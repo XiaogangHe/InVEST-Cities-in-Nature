@@ -72,46 +72,22 @@ InVEST Carbon Storage and Sequestration Model outputs have the following layout:
 ### Structure rundown
 | Folder                                        | File name(s)                                | Explanation                               |
 | :-------------------------------------------- | :------------------------------------------:| :---------------------------------------- |
-| ./                                            | `coastal_exposure.csv`                      |                                           |
-| ./                                            | `coastal_exposure.gpkg`                     |                                           |
-| ./                                            | `InVEST-natcap.invest.coastal_vulnerability-log-2023-01-04--13_36_29.txt`| The file lists the parameter values and output messages for that run and will be named according to the service, the date and time|
-| ./intermediate/                               |  `intermediate_exposure.csv`                | This is an identical copy of the attribute table of coastal_exposure.gpkg provided in csv format for convenience|
-| ./intermediate/                               |  `intermediate_exposure.gpkg`               | This point vector contains the same shore points as in coastal_exposure.gpkg, but the attribute table contains the intermediate values of variables before these values were binned into the 1 - 5 ranks |
-| ./intermediate/geomorphology/                 |  `geomorph.pickle`                          |                                           |
-| ./intermediate/geomorphology/                 |  `geomorphology_projected.gpkg`             |                                           |
-| ./intermediate/geomorphology/                 |  `shore_points_missing_geomorphology.gpkg`  |This vector stores the shore points that received the geomorphology fill value because no geomorphology segments were found within the search radius of the point |
-| ./intermediate/habitats/                      |  `Coral.pickle`                             |                                           |
-| ./intermediate/habitats/                      |  `habitat_protection.csv`                   |                                           |
-| ./intermediate/habitats/                      |  `Mangrove.pickle`                          |                                           |
-| ./intermediate/habitats/                      |  `Seagrass.pickle`                          |                                           |
-| ./intermediate/population/                    |  `clipped_projected_pop.tif`                |                                           |
-| ./intermediate/population/                    |  `population.pickle`                        |                                           |
-| ./intermediate/population/                    |  `Singpopulation_clipped.tif`               |                                           |
-| ./intermediate/relief/                        |  `clipped_projected_dem.tif`                |                                           |
-| ./intermediate/relief/                        |  `positive_dem.tif`                         |                                           |
-| ./intermediate/relief/                        |  `relief.pickle`                            |                                           |
-| ./intermediate/relief/                        |  `singdem1_clipped.tif`                     |                                           |
-| ./intermediate/sealevelrise/                  |  `slr.pickle`                               |                                           |
-| ./intermediate/shore_points/                  |  `clipped_projected_landmass.gpkg`          |                                           |
-| ./intermediate/shore_points/                  |  `landmass_line_index.pickle`               |                                           |
-| ./intermediate/shore_points/                  |  `landmass_line_rtree.dat`                  |                                           |
-| ./intermediate/shore_points/                  |  `landmass_line_rtree.idx`                  |                                           |
-| ./intermediate/shore_points/                  |  `landmass_polygon.pickle`                  |                                           |
-| ./intermediate/shore_points/                  |  `shore_points.gpkg`                        |                                           |
-| ./intermediate/shore_points/                  |  `tmp_clipped_landmass.gpkg`                |                                           |
-| ./intermediate/surge/                         |  `surge.pickle`                             |                                           |
-| ./intermediate/wind_wave/                     |  `clipped_projected_bathy.tif`              |                                           |
-| ./intermediate/wind_wave/                     |  `fetch_points.gpkg`                        |                                           |
-| ./intermediate/wind_wave/                     |  `fetch_rays.gpkg`                          |                                           |
-| ./intermediate/wind_wave/                     |  `gebco_2022_n1.5_s1.0_w103.0_e104.0_clipped.tif`|                                           |
-| ./intermediate/wind_wave/                     |  `negative_bathymetry.tif`                  |                                           |
-| ./intermediate/wind_wave/                     |  `wave.pickle`                              |                                           |
-| ./intermediate/wind_wave/                     |  `wave_energies.gpkg`                       |                                           |
-| ./intermediate/wind_wave/                     |  `wind.pickle`                              |                                           |
-| ./intermediate/wind_wave/                     |  `wwiii_shore_points.gpkg`                  |                                           |
-| ./intermediate/_taskgraph_working_dir         |  `taskgraph_data.db`                        |                                           |
-
-
+| ./                                            | `delta_cur_fut.tif`                         | Rasters showing the difference in carbon stored between the future landscape and the current landscape |                                           |
+| ./                                            | `npv_fut.tif`                               | Rasters showing the economic value of carbon sequestered between the current and the future landscape dates. The units are in currency per pixel | 
+| ./                                            | `report.html`                               | This file presents a summary of all data computed by the model. It also includes descriptions of all other output files produced by the model, so it is a good place to begin exploring and understanding model results. Because this is an HTML file, it can be opened with any web browser |
+| ./                                            | `tot_c_cur.tif`                             | Rasters showing the amount of carbon stored in each pixel for the current scenarios. It is a sum of all of the carbon pools provided by the biophysical table. Units are metric tons per pixel |
+| ./                                            | `tot_c_fut.tif`                             | Rasters showing the amount of carbon stored in each pixel for the future scenarios. It is a sum of all of the carbon pools provided by the biophysical table. Units are metric tons per pixel |
+| ./                                            | `InVEST-natcap.invest.carbon-log-2023-01-27--21_16_24.txt`| The file lists the parameter values and output messages for that run and will be named according to the service, the date and time|
+| ./intermediate_outputs/                       |  `c_above_cur.tif`                          | Raster of aboveground carbon values, mapped from the Carbon Pools table to the current landscape. Units are metric tons per pixel|  
+| ./intermediate_outputs/                       |  `c_above_fut.tif`                          | Raster of aboveground carbon values, mapped from the Carbon Pools table to the future landscape. Units are metric tons per pixel|  
+| ./intermediate_outputs/                       |  `c_below_cur.tif`                          | Raster of belowground carbon values, mapped from the Carbon Pools table to the current landscape. Units are metric tons per pixel|  
+| ./intermediate_outputs/                       |  `c_below_fut.tif`                          | Raster of belowground carbon values, mapped from the Carbon Pools table to the future landscape. Units are metric tons per pixel|  
+| ./intermediate_outputs/                       |  `c_dead_cur.tif`                           | Raster of dead carbon values, mapped from the Carbon Pools table to the current landscape. Units are metric tons per pixel|  
+| ./intermediate_outputs/                       |  `c_dead_fut.tif`                           | Raster of dead carbon values, mapped from the Carbon Pools table to the future landscape. Units are metric tons per pixel|  
+| ./intermediate_outputs/                       |  `c_soil_cur.tif`                           | Raster of soil carbon values, mapped from the Carbon Pools table to the current landscape. Units are metric tons per pixel|  
+| ./intermediate_outputs/                       |  `c_soil_fut.tif`                           | Raster of soil carbon values, mapped from the Carbon Pools table to the future landscape. Units are metric tons per pixel|  
+| ./intermediate_outputs/_taskgraph_working_dir |  `taskgraph_data.db`                        |     |  
+ 
 :::note
 More detailed descriptions about the outputs of the InVEST Carbon Storage and Sequestration Model also can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/carbonstorage.html#data-needs).
 :::
