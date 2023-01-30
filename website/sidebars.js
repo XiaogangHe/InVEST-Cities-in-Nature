@@ -5,7 +5,7 @@ module.exports = {
       type: 'category',
       collapsed: true,
       label: 'Urban Cooling',
-      items: ['Urban-Cooling/about', 'Urban-Cooling/data'],
+      items: ['Urban-Cooling/about', 'Urban-Cooling/data', 'Urban-Cooling/misc'],
     },
     {
       type: 'category',
