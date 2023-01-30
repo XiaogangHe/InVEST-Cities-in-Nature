@@ -10,15 +10,25 @@ title: Model Details
 
 > The InVEST Urban Flood Risk Mitigation Model calculates the runoff reduction, i.e. the amount of runoff retained per pixel compared to the storm volume. For each watershed, it also calculates the potential economic damage by overlaying information on flood extent potential and built infrastructure. <br /> <br /> <p align="right">from [InVEST Documentation](https://invest-userguide.readthedocs.io/en/latest/urban_flood_mitigation.html)</p>
 
-- The InVEST Urban Flood Risk Mitigation Model calculates the runoff reduction, i.e. the amount of runoff retained per pixel compared to the storm volume. For each watershed, it also calculates the potential economic damage by overlaying information on flood extent potential and built infrastructure [(source)](https://invest-userguide.readthedocs.io/en/latest/urban_flood_mitigation.html).
+## Data needs
 
-## Prerequisites
-
-- Before running the module of Urban Flood Risk Mitigation Model, you need to collect all necessary data, which has been listed in the [part of Data Requirement](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/docs/Flood-Risk-Mitigation/data).
+Before running the module of Urban Flood Risk Mitigation Model, you need to collect all necessary data, which has been listed in the [part of Data Requirement](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/docs/Flood-Risk-Mitigation/data).
 
 
-## Model Output Layout
+## How does the model work?
+Add a video here.
 
+or some texts.  
+
+## How to run the model?  
+![figure titled `JSON about the InVEST urban flood risk mitigation model`](../../static/img/UFRM-JSON.png)  
+
+- Step 1: Running the model using all materials listed in the part of data requirement.  
+- Step 2: The results of urban cooling model are described as the following figures. According to these figures, we can find that the runoff values and runoff rention values are influenced by the rainfall and land use types (refer to [the distribution of land use type]([https://xiaoganghe.github.io/InVEST-Cities-in-Nature/docs/Flood-Risk-Mitigation/data]).
+
+## Model Output 
+
+### Layout
 InVEST Urban Flood Risk Mitigation Model outputs have the following layout:
 
 ```
@@ -95,7 +105,7 @@ More detailed descriptions about the outputs of the InVEST Urban Cooling Model a
 | Runoff retention (m<sup>3</sup>)               | \                  | runoff retention volume on pixel| Output |
 | Service| \           | An indicator of the runoff retention service for the watershed. Only calculated when the Built Infrastructure Vector input is provided | Output |
 
-## Related references
+## Model Applications 
 - Quagliolo C, Comino E, Pezzoli A. Experimental flash floods assessment through urban flood risk mitigation (UFRM) model: the case study of Ligurian coastal cities. Frontiers in Water. 2021 May 31;3:663378. https://doi.org/10.3389/frwa.2021.663378.  
 - Kadaverugu A, Nageshwar Rao C, Viswanadh GK. Quantification of flood mitigation services by urban green spaces using InVEST model: a case study of Hyderabad city, India. Modeling Earth Systems and Environment. 2021 Mar;7(1):589-602. https://doi.org/10.1007/s40808-020-00937-0.  
 - Quagliolo C, Assumma V, Comino E, Mondini G, Pezzoli A. An integrated method to assess flood risk and resilience in the MAB UNESCO Collina Po (Italy). InINTERNATIONAL SYMPOSIUM: New Metropolitan Perspectives 2022 (pp. 2545-2555). Springer, Cham. https://doi.org/10.1007/978-3-031-06825-6_243. 
