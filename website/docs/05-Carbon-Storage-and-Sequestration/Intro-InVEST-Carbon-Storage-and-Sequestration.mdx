@@ -62,16 +62,11 @@ InVEST Carbon Storage and Sequestration Model outputs have the following layout:
 | ./                                            | `tot_c_cur.tif`                             | Rasters showing the amount of carbon stored in each pixel for the current scenarios. It is a sum of all of the carbon pools provided by the biophysical table. Units are metric tons per pixel |
 | ./                                            | `tot_c_fut.tif`                             | Rasters showing the amount of carbon stored in each pixel for the future scenarios. It is a sum of all of the carbon pools provided by the biophysical table. Units are metric tons per pixel |
 | ./                                            | `InVEST-natcap.invest.carbon-log-2023-01-27--21_16_24.txt`| The file lists the parameter values and output messages for that run and will be named according to the service, the date and time|
-| ./intermediate_outputs/                       |  `c_above_cur.tif`                          | Raster of aboveground carbon values, mapped from the Carbon Pools table to the current landscape. Units are metric tons per pixel|  
-| ./intermediate_outputs/                       |  `c_above_fut.tif`                          | Raster of aboveground carbon values, mapped from the Carbon Pools table to the future landscape. Units are metric tons per pixel|  
-| ./intermediate_outputs/                       |  `c_below_cur.tif`                          | Raster of belowground carbon values, mapped from the Carbon Pools table to the current landscape. Units are metric tons per pixel|  
-| ./intermediate_outputs/                       |  `c_below_fut.tif`                          | Raster of belowground carbon values, mapped from the Carbon Pools table to the future landscape. Units are metric tons per pixel|  
-| ./intermediate_outputs/                       |  `c_dead_cur.tif`                           | Raster of dead carbon values, mapped from the Carbon Pools table to the current landscape. Units are metric tons per pixel|  
-| ./intermediate_outputs/                       |  `c_dead_fut.tif`                           | Raster of dead carbon values, mapped from the Carbon Pools table to the future landscape. Units are metric tons per pixel|  
-| ./intermediate_outputs/                       |  `c_soil_cur.tif`                           | Raster of soil carbon values, mapped from the Carbon Pools table to the current landscape. Units are metric tons per pixel|  
-| ./intermediate_outputs/                       |  `c_soil_fut.tif`                           | Raster of soil carbon values, mapped from the Carbon Pools table to the future landscape. Units are metric tons per pixel|  
-| ./intermediate_outputs/_taskgraph_working_dir |  `taskgraph_data.db`                        |     |  
- 
+
+:::note
+Files in the `/intermediate` folder are the detailed reults of some intermediate variables.
+:::
+
 :::note
 More detailed descriptions about the outputs of the InVEST Carbon Storage and Sequestration Model also can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/carbonstorage.html#data-needs).
 :::
