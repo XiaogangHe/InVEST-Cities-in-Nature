@@ -56,27 +56,25 @@ InVEST Carbon Storage and Sequestration Model outputs have the following layout:
 ### Structure rundown
 | Folder                                        | File name(s)                                | Explanation                               |
 | :-------------------------------------------- | :------------------------------------------:| :---------------------------------------- |
-| ./                                            | `delta_cur_fut.tif`                         | Rasters showing the difference in carbon stored between the future landscape and the current landscape |                                           |
-| ./                                            | `npv_fut.tif`                               | Rasters showing the economic value of carbon sequestered between the current and the future landscape dates. The units are in currency per pixel | 
-| ./                                            | `report.html`                               | This file presents a summary of all data computed by the model. It also includes descriptions of all other output files produced by the model, so it is a good place to begin exploring and understanding model results. Because this is an HTML file, it can be opened with any web browser |
-| ./                                            | `tot_c_cur.tif`                             | Rasters showing the amount of carbon stored in each pixel for the current scenarios. It is a sum of all of the carbon pools provided by the biophysical table. Units are metric tons per pixel |
-| ./                                            | `tot_c_fut.tif`                             | Rasters showing the amount of carbon stored in each pixel for the future scenarios. It is a sum of all of the carbon pools provided by the biophysical table. Units are metric tons per pixel |
-| ./                                            | `*.txt`| The txt file lists the parameter values and output messages for that run and will be named according to the service, the date and time|
+| ./                                            | `tot_c_cur.tif`                             | Maps showing the amount of carbon stored in each pixel for current scenarios. It is a sum of all of the carbon pools provided by the biophysical table. <br /> <br /> Unit: metric tons per pixel. |
+| ./                                            | `tot_c_fut.tif`                             | Same as the above, but for future scenarios. |
+| ./                                            | `delta_cur_fut.tif`                         | Maps showing the difference in carbon stored between the future landscape and the current landscape. |                                           |
+| ./                                            | `npv_fut.tif`                               | Maps showing the economic value of carbon sequestered between current and future landscapes. <br /> <br /> Unit: currency per pixel. | 
+| ./                                            | `report.html`                               | This file presents a summary of all data computed by the model. It also includes descriptions of all other output files produced by the model, so it is a good place to begin exploring and understanding model results. Because this is an HTML file, it can be opened with any web browser. |
+| ./                                            | `*.txt`| The txt file lists the parameter values and output messages for that run and will be named according to the service, the date and time. |
 
 :::note
-Files in the `/intermediate` folder are the detailed reults of some intermediate variables.
-:::
+As reflected by its name, files in the `/intermediate` folder are intermediate output. 
 
-:::note
-More detailed descriptions about the outputs of the InVEST Carbon Storage and Sequestration Model also can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/carbonstorage.html#data-needs).
+If you want to learn more on these output, you can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/carbonstorage.html#data-needs).
 :::
 
 ### Results visualization
 
 | <!-- -->                                                           | <!-- -->            |            
 | :----------------------------------------------------------------: | :-----------------: |
-| Distribution of carbon storage when year 2020                      |<img src={require("@site/static/img/css-current-carbon.png").default} width="80%"/> |
-| Distribution of carbon storage when year 2050                      |<img src={require("@site/static/img/css-future-carbon.png").default} width="80%"/> |
-| Changes in carbon storage between year 2020 and 2050               |<img src={require("@site/static/img/css-changes-carbon.png").default} width="80%"/> |
-| Changes in the value of carbon storage between year 2020 and 2050  |<img src={require("@site/static/img/css-changes-values-carbon.png").default} width="80%"/> |
+| Current carbon storage <br /> (in 2020)                            |<img src={require("@site/static/img/css-current-carbon.png").default} width="80%"/> |
+| Future carbon storage <br /> (in 2050)                             |<img src={require("@site/static/img/css-future-carbon.png").default} width="80%"/> |
+| Changes in carbon storage <br /> (2050 - 2020)                     |<img src={require("@site/static/img/css-changes-carbon.png").default} width="80%"/> |
+| Changes in the value of carbon storage <br /> (2050 - 2020)        |<img src={require("@site/static/img/css-changes-values-carbon.png").default} width="80%"/> |
 

@@ -3,37 +3,35 @@ id: data
 title: Data Requirment
 ---
 
-## Key Data
+## List of Key Input
 
-### List
-[Download all input data](http://invest-model-input-files.s3-website-ap-southeast-1.amazonaws.com/)
-
-| Variable                           | Unit                | Value               | Type                |
+| Field/Variable                     | Unit                | Value               | Required/Optional   |
 | -----------------------------------| ------------------- |---------------------|---------------------|
-| Work space                         | -                   | -                   | input               |
-| Current LULC                       | -                   | -                   | input               |
-| Carbon pools                       | -                   | -                   | input               |
-| Calculate Sequestration            | -                   | Yes                 | input               |
-| Future LULC                        | -                   | -                   | input               |
-| REDD Scenario Analysis             | -                   | No                  | optional            |
-| Run Valuation Model                | -                   | Yes                 | optional            |
-| Current LULC Year                  | -                   | 2020                | optional            |
-| Future LULC Year                   | -                   | 2050                | optional            |
-| Price Of Carbon                    | currency/t          | 100                 | optional            |
-| Annual Market Discount Rate        | -                   | 0.07                | optional            |
-| Annual Price Change                | -                   | 0.05                | optional            |
+| Work space                         | -                   | -                   | Required            |
+| Current LULC                       | -                   | -                   | Required            |
+| Carbon pools                       | -                   | -                   | Required            |
+| Calculate Sequestration            | -                   | Yes                 | Required            |
+| Future LULC                        | -                   | -                   | Required            |
+| REDD Scenario Analysis             | -                   | No                  | Optional            |
+| Run Valuation Model                | -                   | Yes                 | Optional            |
+| Current LULC Year                  | -                   | 2020                | Optional            |
+| Future LULC Year                   | -                   | 2050                | Optional            |
+| Price Of Carbon                    | currency/t          | 100                 | Optional            |
+| Annual Market Discount Rate        | -                   | 0.07                | Optional            |
+| Annual Price Change                | -                   | 0.05                | Optional            |
 
+:::note Shortcut
+You can download all input [here](http://invest-model-input-files.s3-website-ap-southeast-1.amazonaws.com/).
+:::
 
-
-### Input files  
-- Detailed information about some typical input variables of the InVEST Carbon storage and Sequestration Model are presented by the following figures (or tables). We can learn the basic information about the study region before running this model based on these items.  
+## Visuals of Key Input  
 
 | <!-- -->                                            | <!-- -->            |            
 | :-------------------------------------------------: | :-----------------: |
-| Distribution of land use at present                 |<img src={require("@site/static/img/css-input-before-land-use-change.png").default} width="80%"/> |
-| Distribution of land use after change               |<img src={require("@site/static/img/css-input-after-land-use-change.png").default} width="80%"/> |
+| Present land use                 |<img src={require("@site/static/img/css-input-before-land-use-change.png").default} width="80%"/> |
+| Pertubated land use              |<img src={require("@site/static/img/css-input-after-land-use-change.png").default} width="80%"/> |
 
-- A carbon pools table maps each LULC code to carbon pool data for that LULC type. It should be noted that values are in metric tons/hectare (t/ha) shown in this table.  
+A carbon pools table maps each LULC code to carbon pool data for that LULC type. 
 
 | lucode   | LULC_name        | C_above   | C_below   | C_soil    | C_dead    |
 | ---------| ---------------- | --------- | --------- | --------- | --------- | 
@@ -45,3 +43,5 @@ title: Data Requirment
 | 10       | Evergreen forest | 140       | 70        | 35        | 12        |
 | 11       | Mixed forest     | 140       | 70        | 35        | 12        |
 | 21       | Water            | 0         | 0         | 0         | 0         |
+
+Note: Values in this table are in metric tons/hectare [t/ha].   
