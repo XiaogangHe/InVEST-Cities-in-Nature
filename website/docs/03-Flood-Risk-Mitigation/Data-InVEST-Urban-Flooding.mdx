@@ -3,7 +3,7 @@ id: data
 title: Data Requirment
 ---
 
-## List of Key Input
+## List of key input
 
 | Field/Variable                     | Unit                | Value               | Required/Optional   |
 | -----------------------------------| ------------------- |---------------------|---------------------|
@@ -20,18 +20,19 @@ title: Data Requirment
 You can download all input [here](http://invest-model-input-files.s3-website-ap-southeast-1.amazonaws.com/).
 :::
 
-## Visuals of Key Input  
+## Visuals of key input  
 
-| <!-- -->                                                         | <!-- -->            |            
-| :--------------------------------------------------------------: | :-----------------: |
-| Distribution of all watersheds included in the area of interest  |<img src={require("@site/static/img/ufrm-input-watersheds-of-study-region.png").default} width="80%"/> |
-| Distribution of land use at present                              |<img src={require("@site/static/img/ufrm-input-present-land-use.png").default} width="80%"/> |
-| Distribution of land use after change                            |<img src={require("@site/static/img/ufrm-input-after-land-use-change.png").default} width="80%"/> |
-| Distribution of soil types                                       |<img src={require("@site/static/img/ufrm-input-soil-type.png").default} width="80%"/> |
-| Distribution of built infrastructure                             |<img src={require("@site/static/img/ufrm-input-buildings.png").default} width="80%"/> |  
+| <!-- -->                            | <!-- -->            |            
+| :---------------------------------: | :-----------------: |
+| Watersheds in the study area        |<img src={require("@site/static/img/ufrm-input-watersheds-of-study-region.png").default} width="80%"/> |
+| Present land use                    |<img src={require("@site/static/img/ufrm-input-present-land-use.png").default} width="80%"/> |
+| Changed land use                    |<img src={require("@site/static/img/ufrm-input-after-land-use-change.png").default} width="80%"/> |
+| Soil types                          |<img src={require("@site/static/img/ufrm-input-soil-type.png").default} width="80%"/> |
+| Built infrastructure                |<img src={require("@site/static/img/ufrm-input-buildings.png").default} width="80%"/> |  
 
+## Other useful info
 
-- Detailed information about biophysical table.  
+### Biophysical table  
 
 | lucode    | Description                     | NEH type (to define CN)            | CN_A      | CN_B    | CN_C     | CN_D    | SW_type | EMC    |
 | ----------| ------------------------------- |----------------------------------- | --------- | ------- | -------- | --------| --------|--------| 
@@ -62,7 +63,7 @@ You can download all input [here](http://invest-model-input-files.s3-website-ap-
 | 24        | Tundra                          |                                    | 1         | 1       | 1        | 1       | 3000    | 0      |
 | 25        | Snow/Ice                        |                                    | 1         | 1       | 1        | 1       | 7000    | 0      |
 
-- Detailed information about damage loss table. 
+### Damage loss table 
 
 | Type     | Damage           |
 | ---------| ---------------- |
@@ -71,7 +72,7 @@ You can download all input [here](http://invest-model-input-files.s3-website-ap-
 | 2        | 0.000003         |
 | 3        | 0.000004         |  
 
-- Detailed information about land use table. 
+### Land use table 
 
 | Type     | Damage           |
 | ---------| ---------------- |
@@ -84,9 +85,3 @@ You can download all input [here](http://invest-model-input-files.s3-website-ap-
 | 11       | Mixed forest     |
 | 21       | Water            |  
 
-## Other Considerations
-
-- (1) Different rainfall scenarios  
-  A total of two different rainfall scenarios including 1) rainfall=100 mm and 2) rainfall= 30 mm have been designed in this study. 
-- (2) The influence of land use change  
-  A total of two differnetn land use scenarios including 1) land use at present and 2) land use after change have been designed in this study. 

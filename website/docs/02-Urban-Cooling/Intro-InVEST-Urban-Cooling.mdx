@@ -26,7 +26,7 @@ or some texts.
 - Step 1: Running the model using all materials listed in the part of data requirement.  
 - Step 2: The results of urban cooling model are described as the following figures. According to these figures, we can find that there exist some regions whose WBGT and T_air are clearly higher than their surrounding regions especially in urban districts (refer to [the distribution of land use type](https://xiaoganghe.github.io/InVEST-Cities-in-Nature/docs/Urban-Cooling/data/)). More insights into the energy savings should further take the distribution of buidings into consideration.
 
-## Model Output 
+## Model output 
 
 ### Layout
 InVEST Urban Cooling model outputs have the following layout:
@@ -85,12 +85,14 @@ InVEST Urban Cooling model outputs have the following layout:
 
 | Folder                                        | File name(s)                                | Explanation                               |
 | :-------------------------------------------- | :------------------------------------------:| :---------------------------------------- |
-| ./                                            | `buildings_with_stats.*(dbf,prj,shp,shx)`   | File with results in the attribute table  |
+| ./                                            | `buildings_with_stats.*(dbf,prj,shp,shx)`   | Maps showing various buidling-related statistics (e.g., xxx)  |
+| ./                                            |  `uhi_results.*(dbf,prj,shp,shx)`           | A copy of the input vector “Building Footprints” with the following additional fields, including: energy savings and average temperature value |
 | ./                                            | `hm.tif`                                    | Calculated heat mitigation index (HMI)    |
 | ./                                            | `*.txt`| The txt file lists the parameter values and output messages for that run and will be named according to the service, the date and time |
-| ./                                            |  `uhi_results.*(dbf,prj,shp,shx)`           | A copy of the input vector “Building Footprints” with the following additional fields including energy savings value and average temperature value in building|
 
 :::note
+Only key outputs are listed in the above table.
+
 As reflected by its name, files in the `/intermediate` folder are intermediate output. 
 
 If you want to learn more on these output, you can refer to this [link](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/urban_cooling_model.html#data-needs).
