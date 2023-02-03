@@ -79,7 +79,7 @@ const features = [
     description: (
       <ul className="features__list">
         <li>
-          <a href="/InVEST-Cities-in-Nature/studio/support">Frequently Asked Questions</a>
+          <a href="/InVEST-Cities-in-Nature/studio/studio-FAQs">Frequently Asked Questions</a>
         </li>
         <li>
           <a href="/InVEST-Cities-in-Nature/case-studies/introduction">Case studies</a>
