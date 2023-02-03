@@ -31,7 +31,7 @@ const HomepageHeader = () => {
               'button button--outline button--secondary button--lg',
               styles.getStarted
             )}
-            to="https://www.youtube.com/watch?v=kGau-gNEzFM&t=1s"
+            to="https://www.youtube.com/playlist?list=PLr3DndYQ7cheWlCxNwF-rLeNK0HUMJp84"
           >
             Watch the tutorials
           </Link>
@@ -40,7 +40,7 @@ const HomepageHeader = () => {
               'button button--outline button--primary button--lg',
               styles.getStarted
             )}
-            to="studio/support"
+            to="studio/studio-FAQs"
           >
             FAQs
           </Link>
