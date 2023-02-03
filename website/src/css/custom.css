@@ -414,3 +414,7 @@ html[data-theme='dark'] .stats-item p:hover {
   }
 }
 
+.video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
