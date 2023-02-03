@@ -5,13 +5,13 @@ const features = [
     description: (
       <ul className="features__list">
         <li>
-          <a href="/InVEST-Cities-in-Nature/docs/invest-intro">About InVEST</a>
+          <a href="/InVEST-Cities-in-Nature/docs/invest-intro#what-is-invest">About InVEST</a>
         </li>
         <li>
-          <a href="/InVEST-Cities-in-Nature/docs/invest-intro#download-and-install">Setup</a>
+          <a href="/InVEST-Cities-in-Nature/docs/invest-intro#install-invest">Setup</a>
         </li>
         <li>
-          <a href="/InVEST-Cities-in-Nature/docs/invest-intro#quick-demo">Quick Demo</a>
+          <a href="https://www.youtube.com/playlist?list=PLr3DndYQ7cheWlCxNwF-rLeNK0HUMJp84">Demos</a>
         </li>
       </ul>
     ),
