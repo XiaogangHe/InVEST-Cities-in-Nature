@@ -8,7 +8,7 @@ const features = [
           <a href="/InVEST-Cities-in-Nature/docs/invest-intro#what-is-invest">About InVEST</a>
         </li>
         <li>
-          <a href="/InVEST-Cities-in-Nature/docs/invest-intro#install-invest">Setup</a>
+          <a href="/InVEST-Cities-in-Nature/docs/invest-intro#install-invest">Install InVEST</a>
         </li>
         <li>
           <a href="https://www.youtube.com/playlist?list=PLr3DndYQ7cheWlCxNwF-rLeNK0HUMJp84">Demos</a>
@@ -36,23 +36,14 @@ const features = [
     ),
   },
   {
-    title: 'How To Guides',
+    title: 'Studio Guides',
     description: (
       <ul className="features__list">
         <li>
-          <a href="https://naturalcapitalproject.stanford.edu/software/invest">
-            InVEST Prerequisites
-          </a>
+          <a href="/InVEST-Cities-in-Nature/studio/overview">Overview</a>
         </li>
         <li>
-          <a href="https://naturalcapitalproject.stanford.edu/software/invest">
-            InVEST Setup
-          </a>
-        </li>
-        <li>
-          <a href="https://naturalcapitalproject.stanford.edu/software/invest">
-            InVEST Data
-          </a>
+          <a href="/InVEST-Cities-in-Nature/studio/overview#project-brief">Project Brief</a>
         </li>
       </ul>
     ),
