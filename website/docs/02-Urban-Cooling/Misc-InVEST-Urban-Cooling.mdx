@@ -4,7 +4,7 @@ title: Misc
 ---
 
 ## Glossary
-| Variable              |Abbreviation       | Meaning             | Type  |
+| Term                  |Abbreviation       | Meaning             | Type  |
 | :-------------------- |:------------------| :------------------ | :---: |
 | Biophysical Table     |-                  | A table mapping each LULC code to biophysical data for that LULC class| Input |
 | Urban heat island effect| UHI effect       | The difference between the rural reference temperature and the maximum temperature observed in the city| Input |
@@ -12,11 +12,22 @@ title: Misc
 | Albedo                |-                  | The proportion of solar radiation that is directly reflected by this LULC class. Required if the ‘factors’ option is selected for the Cooling Capacity Calculation Method                 | Output |
 | Cooling capacity      |CC                 | Cooling capacity is the measure of a cooling system's ability to remove heat, which can be obtained based on local shade, evapotranspiration, and albedo| Output |
 | Heat Mitigation Index |HMI                | HMI is equal to CC if the pixel is unaffected by any large green spaces, but otherwise set to a distance-weighted average of the CC values from the large green spaces and the pixel of interest| Output |
-| Wet Bulb Globe Temperature| WBGT           | WBGT can calculate the impacts of heat on work productivity| Output |
-| Air temperature       |T_air              | Average air temperatures                 | Output |
-| [Energy savings](https://storage.googleapis.com/releases.naturalcapitalproject.org/invest-userguide/latest/urban_cooling_model.html#data-needs)| -              |The model uses a relationship between energy consumption and temperature (e.g. summarized by Santamouris et al. 2015) to calculate energy savings and associated costs for a building                 | Output |
+| Wet Bulb Globe Temperature| WBGT           | WBGT is widely used to quantify the impacts of heat on work productivity| Output |
+| Air temperature       |T_air              | Average air temperature                 | Output |
+| Energy savings        | -              | Energy savings are calculated based on an empirical relationship between energy consumption and temperature (e.g. summarized by [Santamouris et al. 2015](https://www.sciencedirect.com/science/article/abs/pii/S0378778814007907?via%3Dihub))         | Output |
 
 ## Model applications 
 - Hamel, P., Guerry, A.D., Polasky, S., Han, B., Douglass, J.A., Hamann, M., Janke, B., Kuiper, J.J., Levrel, H., Liu, H. and Lonsdorf, E., 2021. [Mapping the benefits of nature in cities with the InVEST software](https://www.nature.com/articles/s42949-021-00027-9). npj Urban Sustainability, 1(1), p.25.
 - Zawadzka, J.E., Harris, J.A. and Corstanje, R., 2021. [Assessment of heat mitigation capacity of urban greenspaces with the use of InVEST urban cooling model, verified with day-time land surface temperature data](https://doi.org/10.1016/j.landurbplan.2021.104163). Landscape and Urban Planning, 214, p.104163.   
 - Veerkamp, C.J., Loreti, M., Benavidez, R., Jackson, B. and Schipper, A.M., 2023. [Comparing three spatial modeling tools for assessing urban ecosystem services](https://doi.org/10.1016/j.ecoser.2022.101500). Ecosystem Services, 59, p.101500.
+
+## Related readings/videos
+:::tip Need inspiration?
+Below is an incomplete list of readings (e.g., news articles 📰, government reports 📗, etc) and videos 📺 that might spark some cool ideas for your Studio projects. 
+
+Feel free to explore by yourself.  
+:::
+
+- 📗 Cooling Down in a Heating Singapore. 2021. [Preparing for a Climate Resilient Singapore](https://www.clc.gov.sg/docs/default-source/urban-systems-studies/uss-preparing-for-a-climate-resilient-singapore.pdf). Page 103. Centre for Liveable Cities (CLC). 
+- 📗 Climate Proofing the City Against Heat. 2021. [Preparing for a Climate Resilient Singapore](https://www.clc.gov.sg/docs/default-source/urban-systems-studies/uss-preparing-for-a-climate-resilient-singapore.pdf). Page 138. Centre for Liveable Cities (CLC). 
+- 📺 [How Singapore Uses Science to Stay Cool](https://www.youtube.com/watch?v=PM101DvvG4Q). 2021.  
