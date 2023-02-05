@@ -36,9 +36,23 @@ You can download all input [here](http://invest-model-input-files.s3-website-ap-
 
 ## Other useful info
 
+### Land use table 
+
+| lucode <br /> (land use class)   | Type             |
+| ---------| ---------------- |
+| 2        | Urban districts  |
+| 6        | Cultivated land  |
+| 7        | Pature/hay       |
+| 8        | Grassland        |
+| 9        | Deciduous forest |
+| 10       | Evergreen forest |
+| 11       | Mixed forest     |
+| 21       | Water            |  
+
+
 ### Biophysical table  
 
-| lucode    | Description                     | NEH type (to define CN)            | CN_A      | CN_B    | CN_C     | CN_D    | SW_type | EMC    |
+| lucode    | Description                     | NEH type (to define CN[^1])| CN_A    | CN_B    | CN_C     | CN_D    | SW_type | EMC    |
 | ----------| ------------------------------- |----------------------------------- | --------- | ------- | -------- | --------| --------|--------| 
 | 0         | Background                      |                                    | 1         | 1       | 1        | 1       | 7000    | 0      |
 | 1         | Unclassified                    |                                    | 1         | 1       | 1        | 1       | 7000    | 0      |
@@ -69,23 +83,12 @@ You can download all input [here](http://invest-model-input-files.s3-website-ap-
 
 ### Damage loss table 
 
-| Type     | Damage           |
-| ---------| ---------------- |
-| 0        | 0.000001         |
-| 1        | 0.000002         |
-| 2        | 0.000003         |
-| 3        | 0.000004         |  
+| Building type     | Damage[^2] <br /> [USD/m²]      |
+| ------------------| ---------------- |
+| 0                 | 0.000001         |
+| 1                 | 0.000002         |
+| 2                 | 0.000003         |
+| 3                 | 0.000004         |  
 
-### Land use table 
-
-| Code     | Type             |
-| ---------| ---------------- |
-| 2        | Urban districts  |
-| 6        | Cultivated land  |
-| 7        | Pature/hay       |
-| 8        | Grassland        |
-| 9        | Deciduous forest |
-| 10       | Evergreen forest |
-| 11       | Mixed forest     |
-| 21       | Water            |  
-
+[^1]: CN = Curve Number. Check details [here](http://releases.naturalcapitalproject.org/invest-userguide/latest/data_sources.html#cn). 
+[^2]: Damage data is obtained from a global [study](https://publications.jrc.ec.europa.eu/repository/bitstream/JRC105688/global_flood_depth-damage_functions__10042017.pdf) by European Commission. 
