@@ -1,5 +1,5 @@
 ---
-id: invest-urban-cooling
+id: tutorial-2
 title: Tutorial 2
 ---
 

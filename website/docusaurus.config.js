@@ -61,7 +61,7 @@ module.exports = {
           activeBaseRegex: '/studio/',
         },
         {
-          to: '/tutorial/overview',
+          to: '/tutorial/tutorial-1',
           label: 'Tutorials',
           position: 'left',
           activeBaseRegex: '/tutorial/',
